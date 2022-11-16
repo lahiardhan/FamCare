@@ -1,0 +1,66 @@
+{
+  "id": "FamCare-lite-pwa-1",
+  "start_url": "/",
+  "short_name": "FamCare",
+  "name": "FamCare",
+  "description": "Platform layanan dukungan kesehatan mental keluarga",
+  "display": "standalone",
+  "theme_color": "#28315E",
+  "background_color": "#28315E",
+  "icons": [
+    {
+      "src": "./icons/maskable_icon_x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "./icons/logo192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./icons/logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Anxiety Test",
+      "short_name": "Anxiety Test",
+      "url": "/test",
+      "icons": [
+        {
+          "src": "./icons/logo192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Article",
+      "short_name": "Article",
+      "url": "/article",
+      "icons": [
+        {
+          "src": "./icons/logo192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Forum Diskusi",
+      "short_name": "Forum Diskusi",
+      "url": "/forum",
+      "icons": [
+        {
+          "src": "./icons/logo192.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    }
+  ]
+}
