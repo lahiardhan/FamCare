@@ -1,11 +1,27 @@
 import React from 'react';
+import DaftarLayanan from '../../components/organisms/DaftarLayanan';
+import DetailLayanan from '../../components/organisms/DetailLayanan';
+import HeroElement from '../../components/organisms/HeroElement';
+import TestimoniSection from '../../components/organisms/TestimoniSection';
 
 function LandingPage() {
   return (
-    <div className="h-[100vh] w-full flex flex-col justify-center items-center">
-      Hello World!
-      <img src="/images/hero-image.svg" alt="" width={400} />
-    </div>
+    <>
+      {/* HERO */}
+      <HeroElement />
+
+      {/* MAIN */}
+      <section id="main" className="min-h-screen">
+        {/* LAYANAN */}
+        <DaftarLayanan />
+
+        {/* DETAIL LAYANAN */}
+        <DetailLayanan />
+
+        {/* TESTIMONIAL */}
+        <TestimoniSection />
+      </section>
+    </>
   );
 }
 
