@@ -9,14 +9,14 @@ function HeroElement() {
         <div className="flex justify-center min-h-[220px] xs:col-start-2 xs:row-start-1 xs:row-end-2 xs:items-start xs:relative xs:top-1/4"> {/** Penggunaan xs:relative membuat elemen ada di posisi z-index paling atas */}
           <img src="/images/hero-image.svg" alt="hero-image" width={400} />
         </div>
-        <div className="font-medium mt-6 h-fit xs:mt-0 xs:col-start-1 xs:row-start-1 xs:row-end-2 xs:relative xs:top-1/4 md:top-[30%]"> {/** Penggunaan xs:relative membuat elemen ada di posisi z-index paling atas */}
+        <div className="z-20 font-medium mt-6 h-fit xs:mt-0 xs:col-start-1 xs:row-start-1 xs:row-end-2 xs:relative xs:top-1/4 md:top-[30%]"> {/** Penggunaan xs:relative membuat elemen ada di posisi z-index paling atas */}
           <p className="text-sm sm:text-base lg:text-lg">Selamat datang di,</p>
           <h2 className="text-4xl font-[900]">FamCare</h2>
           <p className="text-sm sm:text-base lg:text-lg">FamCare adalah platform  layanan kesehatan dukungan mental Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
             nisi ut aliquip ex ea commodo consequat.
           </p>
-          <Button className="mt-4" text="Selengkapnya" />
+          <Button className="mt-4" link="/about" text="Selengkapnya" />
         </div>
       </div>
     </div>
