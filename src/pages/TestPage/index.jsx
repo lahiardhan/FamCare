@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 
+
 function TestPage() {
   return (
     <>
@@ -27,7 +28,7 @@ function TestPage() {
                 <a href="#Alur--Test--" data-aos="fade-down" data-aos-delay="700"><Button title="ALUR TEST"/></a>
                 <a href="#Panduan--Test--" className='ml-[30px]' data-aos="fade-down" data-aos-delay="800"><Button title="PANDUAN TEST"/></a>
               </div>
-              <Link to={`/`} className='mt-[30px]' data-aos="fade-down" data-aos-delay="900"><Button title="MULAI TEST"/></Link>
+              <Link to={`/test1`} className='mt-[30px]' data-aos="fade-down" data-aos-delay="900"><Button title="MULAI TEST"/></Link>
             </div>
         </div>
 
@@ -101,7 +102,7 @@ function TestPage() {
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
-              <Link to={`/`} ><Button title="MULAI TEST"/></Link>
+              <Link to={`/test1`} ><Button title="MULAI TEST"/></Link>
             </div>
           </div>
         </div>
@@ -127,7 +128,7 @@ function TestPage() {
             <div className=' flex flex-row justify-center mt-[60px]'>
               <a href="#Alur--Test-" data-aos="fade-down" data-aos-delay="700"><Button title="ALUR TEST"/></a>
               <a href="#Panduan--Test-" className='ml-[30px]' data-aos="fade-down" data-aos-delay="800"><Button title="PANDUAN TEST"/></a>
-              <Link to={`/`} className='ml-[30px]' data-aos="fade-down" data-aos-delay="900"><Button title="MULAI TEST"/></Link>
+              <Link to={`/test1`} className='ml-[30px]' data-aos="fade-down" data-aos-delay="900"><Button title="MULAI TEST"/></Link>
             </div>
         </div>
 
@@ -201,7 +202,7 @@ function TestPage() {
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
-              <Link to={`/`} ><Button title="MULAI TEST"/></Link>
+              <Link to={`/test1`} ><Button title="MULAI TEST"/></Link>
             </div>
           </div>
         </div>
@@ -227,7 +228,7 @@ function TestPage() {
             <div className=' flex flex-row justify-center mt-[60px]'>
               <a href="#Alur--Test" data-aos="fade-down" data-aos-delay="700"><Button title="ALUR TEST"/></a>
               <a href="#Panduan--Test" className='ml-[30px]' data-aos="fade-down" data-aos-delay="800"><Button title="PANDUAN TEST"/></a>
-              <Link to={`/`} className='ml-[30px]' data-aos="fade-down" data-aos-delay="900"><Button title="MULAI TEST"/></Link>
+              <Link to={`/test1`} className='ml-[30px]' data-aos="fade-down" data-aos-delay="900"><Button title="MULAI TEST"/></Link>
             </div>
         </div>
 
@@ -301,7 +302,7 @@ function TestPage() {
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
-              <Link to={`/`} ><Button title="MULAI TEST"/></Link>
+              <Link to={`/test1`} ><Button title="MULAI TEST"/></Link>
             </div>
           </div>
         </div>
@@ -324,7 +325,7 @@ function TestPage() {
             <div className='flex felx-row mt-[5px] w-[600px]'>
               <a href="#Alur-Test" data-aos="fade-down" data-aos-delay="900"><Button title="ALUR TEST" /></a>
               <a href="#Panduan-Test" className='ml-[15px]' data-aos="fade-down" data-aos-delay="1000"><Button title="PANDUAN TEST"/></a>
-              <Link to={`/`} className='ml-[15px]' data-aos="fade-down" data-aos-delay="1100"><Button title="MULAI TEST"/></Link>
+              <Link to={`/test1`} className='ml-[15px]' data-aos="fade-down" data-aos-delay="1100"><Button title="MULAI TEST"/></Link>
             </div>
           </div>
         </div>
@@ -397,7 +398,7 @@ function TestPage() {
                 </ul>
               </div>
               <div className='flex felx-row mt-[20px]' data-aos="fade-down">
-                <Link to={`/`} ><Button title="MULAI TEST"/></Link>
+                <Link to={`/test1`} ><Button title="MULAI TEST"/></Link>
               </div>
             </div>
           </div>
@@ -421,7 +422,7 @@ function TestPage() {
             <div className='flex felx-row mt-[35px] w-[600px]'>
               <a href="#AlurTest" data-aos="fade-down" data-aos-delay="900"><Button title="ALUR TEST"/></a>
               <a href="#PanduanTest" className='ml-[15px]' data-aos="fade-down" data-aos-delay="1000"><Button title="PANDUAN TEST"/></a>
-              <Link to={`/`} className='ml-[15px]' data-aos="fade-down" data-aos-delay="1100"><Button title="MULAI TEST"/></Link>
+              <Link to={`/test1`} className='ml-[15px]' data-aos="fade-down" data-aos-delay="1100"><Button title="MULAI TEST"/></Link>
             </div>
           </div>
         </div>
@@ -494,7 +495,7 @@ function TestPage() {
                 </ul>
               </div>
               <div className='flex flex-row mt-[20px]' data-aos="fade-down">
-                <Link to={`/`} ><Button title="MULAI TEST"/></Link>
+                <Link to={`/test1`} ><Button title="MULAI TEST"/></Link>
               </div>
             </div>
           </div>
