@@ -5,7 +5,7 @@ function Footer() {
   return (
     <>
       {/*Disclaimer*/}
-      <div className='flex-initial w-full bg-[url("/public/images/BG-DISCLAIMER.png")]'>
+      <div className='flex-initial w-full bg-[url("/public/images/disclaimer-images.webp")]'>
         <div className="items-center px-5 flex flex-col text-center text-white">
           <h3 className='text-xl font-bold py-[30px] lg:text-2xl'> DISCLAIMER!</h3>
           <p className='text-base font-medium border-box lg:text-lg'>Jika Anda sedang mengalami krisis psikologis yang mengancam hidup Anda,<br/>layanan ini tidak direkomendasikan.</p>
