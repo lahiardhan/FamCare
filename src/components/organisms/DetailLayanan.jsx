@@ -5,6 +5,7 @@ function DetailLayanan() {
   return (
     <section className="w-full flex flex-wrap flex-col items-center px-4">
       <DetailLayananItem
+        href="/test"
         title="Tes Kecemasan"
         image="test-image.svg"
         buttonText="Daftar Sekarang"
@@ -14,6 +15,7 @@ function DetailLayanan() {
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       />
       <DetailLayananItem
+        href="/article"
         title="Artikel"
         image="article-image.svg"
         buttonText="Baca Sekarang" invertedPosition={true}
@@ -23,6 +25,7 @@ function DetailLayanan() {
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
       />
       <DetailLayananItem
+        href="/forum"
         title="Forum Diskusi"
         image="forum-discussion.svg"
         buttonText="Gabung Sekarang"
