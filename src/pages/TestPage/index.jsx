@@ -14,7 +14,7 @@ function TestPage() {
         {/*Top Content*/}
         <div className='mt-[50px]'>
             <div className='flex justify-center' data-aos="fade-down">
-              <img src='images/herotest-image.png' alt="vector_testimage" className='w-[300px]'/>
+              <img src='images/herotest-image.svg' alt="vector_testimage" className='w-[300px]'/>
             </div>
             <div className='flex flex-col text-center mt-[50px]'>
               <p className='text-lg font-medium' data-aos="zoom-in-up" data-aos-delay="400"><span className='underline decoration-auto'>Yuk Check Kondisimu</span>!</p>
@@ -37,7 +37,7 @@ function TestPage() {
           <h2 className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="200">Alur Test</h2>
           <div className='mt-[80px]'>
             <div className='flex justify-center' data-aos="fade-right">
-               <img src='images/kliktombol-images.png' className='w-[80px]'/>
+               <img src='images/kliktombol-images.svg' className='w-[80px]'/>
             </div>
             <h3 className='text-center text-2xl font-semibold mt-[20px]' data-aos="fade-left">Klik Mulai Test</h3>
             <div className='flex justify-center'>
@@ -46,7 +46,7 @@ function TestPage() {
           </div>
           <div className='flex flex-col mt-[50px]'>
             <div className='flex justify-center' data-aos="fade-right">
-              <img src='images/kerjakantest-image.png' className='w-[100px]'/>
+              <img src='images/kerjakantest-image.svg' className='w-[100px]'/>
             </div>
             <h3 className='text-center text-2xl font-semibold mt-[20px]' data-aos="fade-left">Kerjakan Test</h3>
             <div className='flex justify-center'>
@@ -55,7 +55,7 @@ function TestPage() {
           </div>
           <div className='flex flex-col mt-[50px]'>
             <div className='flex justify-center' data-aos="fade-right">
-              <img src='images/hasiltest-image.png' className='w-[90px]'/>
+              <img src='images/hasiltest-image.svg' className='w-[90px]'/>
             </div>
             <h3 className='text-center text-2xl font-semibold mt-[20px]' data-aos="fade-left">Dapatkan Hasil Test</h3>
             <div className='flex justify-center'>
@@ -116,7 +116,7 @@ function TestPage() {
         {/*Top Content*/}
         <div className='mt-[50px]'>
             <div className='flex justify-center' data-aos="fade-down">
-              <img src='images/herotest-image.png' alt="vector_testimage" className='w-[350px]'/>
+              <img src='images/herotest-image.svg' alt="vector_testimage" className='w-[350px]'/>
             </div>
             <div className='flex flex-col text-center mt-[50px]'>
               <p className='text-xl font-medium' data-aos="zoom-in-up" data-aos-delay="400"><span className='underline decoration-auto'>Yuk Check Kondisimu</span>! 650</p>
@@ -137,7 +137,7 @@ function TestPage() {
           <h2 className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="200">Alur Test</h2>
           <div className='mt-[80px]'>
             <div className='flex justify-center' data-aos="fade-right">
-               <img src='images/kliktombol-images.png' className='w-[100px]'/>
+               <img src='images/kliktombol-images.svg' className='w-[100px]'/>
             </div>
             <h3 className='text-center text-3xl font-semibold mt-[20px]' data-aos="fade-left">Klik Mulai Test</h3>
             <div className='flex justify-center'>
@@ -146,7 +146,7 @@ function TestPage() {
           </div>
           <div className='flex flex-col mt-[50px]'>
             <div className='flex justify-center' data-aos="fade-right">
-              <img src='images/kerjakantest-image.png' className='w-[120px]'/>
+              <img src='images/kerjakantest-image.svg' className='w-[120px]'/>
             </div>
             <h3 className='text-center text-3xl font-semibold mt-[20px]' data-aos="fade-left">Kerjakan Test</h3>
             <div className='flex justify-center'>
@@ -155,7 +155,7 @@ function TestPage() {
           </div>
           <div className='flex flex-col mt-[50px]'>
             <div className='flex justify-center' data-aos="fade-right">
-              <img src='images/hasiltest-image.png' className='w-[110px]'/>
+              <img src='images/hasiltest-image.svg' className='w-[110px]'/>
             </div>
             <h3 className='text-center text-3xl font-semibold mt-[20px]' data-aos="fade-left">Dapatkan Hasil Test</h3>
             <div className='flex justify-center'>
@@ -216,7 +216,7 @@ function TestPage() {
         {/*Top Content*/}
         <div className='mt-[50px]'>
             <div className='flex justify-center' data-aos="fade-down">
-              <img src='images/herotest-image.png' alt="vector_testimage" className='w-[400px]'/>
+              <img src='images/herotest-image.svg' alt="vector_testimage" className='w-[400px]'/>
             </div>
             <div className='flex flex-col text-center mt-[50px]'>
               <p className='text-2xl font-medium' data-aos="zoom-in-up" data-aos-delay="400"><span className='underline decoration-auto'>Yuk Check Kondisimu</span>!</p>
@@ -237,7 +237,7 @@ function TestPage() {
           <h2 className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="200">Alur Test</h2>
           <div className='mt-[80px]'>
             <div className='flex justify-center' data-aos="fade-right">
-               <img src='images/kliktombol-images.png' className='w-[100px]'/>
+               <img src='images/kliktombol-images.svg' className='w-[100px]'/>
             </div>
             <h3 className='text-center text-3xl font-semibold mt-[20px]' data-aos="fade-left">Klik Mulai Test</h3>
             <div className='flex justify-center'>
@@ -246,7 +246,7 @@ function TestPage() {
           </div>
           <div className='flex flex-col mt-[50px]'>
             <div className='flex justify-center' data-aos="fade-right">
-              <img src='images/kerjakantest-image.png' className='w-[120px]'/>
+              <img src='images/kerjakantest-image.svg' className='w-[120px]'/>
             </div>
             <h3 className='text-center text-3xl font-semibold mt-[20px]' data-aos="fade-left">Kerjakan Test</h3>
             <div className='flex justify-center'>
@@ -255,7 +255,7 @@ function TestPage() {
           </div>
           <div className='flex flex-col mt-[50px]'>
             <div className='flex justify-center' data-aos="fade-right">
-              <img src='images/hasiltest-image.png' className='w-[110px]'/>
+              <img src='images/hasiltest-image.svg' className='w-[110px]'/>
             </div>
             <h3 className='text-center text-3xl font-semibold mt-[20px]' data-aos="fade-left">Dapatkan Hasil Test</h3>
             <div className='flex justify-center'>
@@ -315,7 +315,7 @@ function TestPage() {
       <div className='flex-col container px-5'>
         {/*Top Content*/}
         <div className='flex flex-row justify-center mt-24'>
-          <img src='images/herotest-image.png' alt="vector_testimage" className='w-[326px] ml-14' data-aos="zoom-in"/>
+          <img src='images/herotest-image.svg' alt="vector_testimage" className='w-[326px] ml-14' data-aos="zoom-in"/>
           <div className='flex flex-col ml-14 mt-[80px]'>
             <div className='flex flex-col'>
               <p className='text-xl font-medium' data-aos="fade-right" data-aos-delay="400"><span className='underline decoration-auto'>Yuk Check Kondisimu</span>!</p>
@@ -335,7 +335,7 @@ function TestPage() {
           <div className='flex flex-row justify-center mt-[80px]'>
             <div className='flex flex-col mx-[15px]'>
               <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="1400">
-                <img src='images/kliktombol-images.png' className='w-[90px]'/>
+                <img src='images/kliktombol-images.svg' className='w-[90px]'/>
               </div>
               <h3 className='text-center text-xl font-bold mt-[10px]' data-aos="fade-up" data-aos-delay="100">Klik Mulai Test</h3>
               <p className='text-center font-medium w-[300px] mt-[5px]' data-aos="fade-up" data-aos-delay="400">Anda dapat melakukan test ini dengan menekan tombol mulai test.</p>
@@ -343,7 +343,7 @@ function TestPage() {
 
             <div className='flex flex-col mx-[15px]'>
               <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="1500">
-                <img src='images/kerjakantest-image.png' className='w-[90px]'/>
+                <img src='images/kerjakantest-image.svg' className='w-[90px]'/>
               </div>
               <h3 className='text-center text-xl font-bold mt-[10px]' data-aos="fade-up" data-aos-delay="200">Kerjakan Test</h3>
               <p className='text-center font-medium w-[300px] mt-[5px]' data-aos="fade-up" data-aos-delay="500">Memulai mengerjakan test dengan beberapa pertanyaan yang sudah disediakan.</p>
@@ -351,7 +351,7 @@ function TestPage() {
             
             <div className='flex flex-col mx-[15px]'>
               <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="1600">
-                <img src='images/hasiltest-image.png' className='w-[90px]'/>
+                <img src='images/hasiltest-image.svg' className='w-[90px]'/>
               </div>
               <h3 className='text-center text-xl font-bold mt-[10px]' data-aos="fade-up" data-aos-delay="300">Dapatkan Hasil Test</h3>
               <p className='text-center font-medium w-[300px] mt-[5px]' data-aos="fade-up" data-aos-delay="600">Dapatkan hasil akhir berupa kondisi tingkat kecemasan anda dan juga dapatkan tips serta trick dalam menangani kecemasan anda.</p>
@@ -412,7 +412,7 @@ function TestPage() {
       <div className='flex-col container px-5'>
         {/*Top Content*/}
         <div className='flex flex-row justify-center mt-24'>
-          <img src='images/herotest-image.png' alt="vector_testimage" className='w-[426px]' data-aos="zoom-in"/>
+          <img src='images/herotest-image.svg' alt="vector_testimage" className='w-[426px]' data-aos="zoom-in"/>
           <div className='flex flex-col ml-20 mt-[100px]'>
             <div className='flex flex-col'>
               <p className='text-2xl font-medium' data-aos="fade-right"  data-aos-delay="400"><span className='underline decoration-auto'>Yuk Check Kondisimu</span>!</p>
@@ -432,7 +432,7 @@ function TestPage() {
           <div className='flex flex-row justify-center mt-[80px]'>
             <div className='flex flex-col mx-[15px]'>
               <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="100">
-                <img src='images/kliktombol-images.png' className='w-[125px]'/>
+                <img src='images/kliktombol-images.svg' className='w-[125px]'/>
               </div>
               <h3 className='text-center text-3xl font-bold mt-[20px]' data-aos="fade-up" data-aos-delay="400">Klik Mulai Test</h3>
               <p className='text-center text-lg font-normal w-[420px] mt-[15px]' data-aos="fade-up" data-aos-delay="700">Anda dapat melakukan test ini dengan menekan tombol mulai test.</p>
@@ -440,7 +440,7 @@ function TestPage() {
 
             <div className='flex flex-col mx-[15px]'>
               <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="200">
-                <img src='images/kerjakantest-image.png' className='w-[125px]'/>
+                <img src='images/kerjakantest-image.svg' className='w-[125px]'/>
               </div>
               <h3 className='text-center text-3xl font-bold mt-[20px]' data-aos="fade-up" data-aos-delay="500">Kerjakan Test</h3>
               <p className='text-center text-lg font-normal w-[420px] mt-[15px]' data-aos="fade-up" data-aos-delay="800">Memulai mengerjakan test dengan beberapa pertanyaan yang sudah disediakan.</p>
@@ -448,7 +448,7 @@ function TestPage() {
             
             <div className='flex flex-col mx-[15px]'>
               <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="300">
-                <img src='images/hasiltest-image.png' className='w-[125px]'/>
+                <img src='images/hasiltest-image.svg' className='w-[125px]'/>
               </div>
               <h3 className='text-center text-3xl font-bold mt-[20px]' data-aos="fade-up" data-aos-delay="600">Dapatkan Hasil Test</h3>
               <p className='text-center text-lg font-normal w-[420px] mt-[15px]' data-aos="fade-up" data-aos-delay="900">Dapatkan hasil akhir berupa kondisi tingkat kecemasan anda dan juga dapatkan tips serta trick dalam menangani kecemasan anda.</p>
