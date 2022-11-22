@@ -14,6 +14,7 @@ function LandingPage() {
       <section id="main" className="min-h-screen">
         {/* LAYANAN */}
         <DaftarLayanan />
+        <p>test</p>
 
         {/* DETAIL LAYANAN */}
         <DetailLayanan />
