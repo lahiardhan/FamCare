@@ -1,5 +1,4 @@
 import Button from '../../components/Button';
-import { Link } from 'react-router-dom';
 import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -12,7 +11,7 @@ function TestPage() {
     <div className='flex justify-center sm:hidden'>
       <div className='flex-col container px-5'>
         {/*Top Content*/}
-        <div className='mt-[50px]'>
+        <div className='mt-40'>
             <div className='flex justify-center' data-aos="fade-down">
               <img src='images/herotest-image.svg' alt="vector_testimage" className='w-[300px]'/>
             </div>
@@ -23,18 +22,18 @@ function TestPage() {
                 <p className='text-base font-normal w-[450px] mt-[15px]' data-aos="zoom-in-up" data-aos-delay="600">FamCare menghadirkan layanan berupa test agar dapat membantu mengukur dan juga mengetahui kondisi terkini dari diri anda yang berkaitan dengan tingkat kecemasan yang sedang dialami.</p>
               </div>
             </div>
-            <div className=' flex flex-col text-center mt-[60px]'>
-              <div className=' flex justify-center'>
-                <a href="#Alur--Test--" data-aos="fade-down" data-aos-delay="700"><Button title="ALUR TEST"/></a>
-                <a href="#Panduan--Test--" className='ml-[30px]' data-aos="fade-down" data-aos-delay="800"><Button title="PANDUAN TEST"/></a>
+            <div className=' flex-initial justify-center mt-[50px]' data-aos="fade-down" data-aos-delay="1000">
+              <div className='flex-initial w-[600px]'>
+                <Button href='#Alur--Test--' text="ALUR TEST"/>
+                <Button className='ml-[15px]' href='#Panduan--Test--' text="PANDUAN TEST"/>
+                <Button className='ml-[15px]' href='/test1' text="MULAI TEST" />
               </div>
-              <Link to={`/test1`} className='mt-[30px]' data-aos="fade-down" data-aos-delay="900"><Button title="MULAI TEST"/></Link>
             </div>
         </div>
 
         {/*Alur Test*/}
-        <div id='Alur--Test--' className='flex flex-col container px-5 mt-[180px] '>
-          <h2 className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="200">Alur Test</h2>
+        <div className='flex flex-col container px-5 mt-[180px] '>
+          <h2 id='Alur--Test--' className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="200">Alur Test</h2>
           <div className='mt-[80px]'>
             <div className='flex justify-center' data-aos="fade-right">
                <img src='images/kliktombol-images.svg' className='w-[80px]'/>
@@ -65,8 +64,8 @@ function TestPage() {
         </div>
 
         {/*Panduan Test*/}
-        <div id='Panduan--Test--' className='flex flex-col container px-5 mt-[180px]'>
-          <h2 className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down">Panduan Test</h2>
+        <div className='flex flex-col container px-5 mt-[180px]'>
+          <h2 id='Panduan--Test--' className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down">Panduan Test</h2>
           <div className='flex justify-center mt-[80px]' data-aos="zoom-in-down">
             <img src='images/panduan-test.svg' className='w-[325px]'/>
           </div>
@@ -102,7 +101,7 @@ function TestPage() {
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
-              <Link to={`/test1`} ><Button title="MULAI TEST"/></Link>
+              <Button text="MULAI TEST" href='/test1'/>
             </div>
           </div>
         </div>
@@ -114,7 +113,7 @@ function TestPage() {
     <div className='hidden sm:flex justify-center md:hidden'>
       <div className='flex-col container px-5'>
         {/*Top Content*/}
-        <div className='mt-[50px]'>
+        <div className='mt-40'>
             <div className='flex justify-center' data-aos="fade-down">
               <img src='images/herotest-image.svg' alt="vector_testimage" className='w-[350px]'/>
             </div>
@@ -125,16 +124,16 @@ function TestPage() {
                 <p className='text-lg font-normal w-[520px] mt-[15px]' data-aos="zoom-in-up" data-aos-delay="600">FamCare menghadirkan layanan berupa test agar dapat membantu mengukur dan juga mengetahui kondisi terkini dari diri anda yang berkaitan dengan tingkat kecemasan yang sedang dialami.</p>
               </div>
             </div>
-            <div className=' flex flex-row justify-center mt-[60px]'>
-              <a href="#Alur--Test-" data-aos="fade-down" data-aos-delay="700"><Button title="ALUR TEST"/></a>
-              <a href="#Panduan--Test-" className='ml-[30px]' data-aos="fade-down" data-aos-delay="800"><Button title="PANDUAN TEST"/></a>
-              <Link to={`/test1`} className='ml-[30px]' data-aos="fade-down" data-aos-delay="900"><Button title="MULAI TEST"/></Link>
+            <div className='flex-initial justify-center ml-[25px] mt-[50px] w-[600px]' data-aos="fade-down" data-aos-delay="1000">
+              <Button href='#Alur--Test-' text="ALUR TEST"/>
+              <Button className='ml-[15px]' href='#Panduan--Test-' text="PANDUAN TEST"/>
+              <Button className='ml-[15px]' href='/test1' text="MULAI TEST" />
             </div>
         </div>
 
         {/*Alur Test*/}
-        <div id='Alur--Test-' className='flex flex-col container px-5 mt-[180px] '>
-          <h2 className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="200">Alur Test</h2>
+        <div className='flex flex-col container px-5 mt-[180px] '>
+          <h2 id='Alur--Test-' className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="200">Alur Test</h2>
           <div className='mt-[80px]'>
             <div className='flex justify-center' data-aos="fade-right">
                <img src='images/kliktombol-images.svg' className='w-[100px]'/>
@@ -165,8 +164,8 @@ function TestPage() {
         </div>
 
         {/*Panduan Test*/}
-        <div id='Panduan--Test-' className='flex flex-col container px-5 mt-[180px]'>
-          <h2 className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down">Panduan Test</h2>
+        <div className='flex flex-col container px-5 mt-[180px]'>
+          <h2 id='Panduan--Test-' className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down">Panduan Test</h2>
           <div className='flex justify-center mt-[80px]' data-aos="zoom-in-down">
             <img src='images/panduan-test.svg' className='w-[375px]'/>
           </div>
@@ -202,7 +201,7 @@ function TestPage() {
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
-              <Link to={`/test1`} ><Button title="MULAI TEST"/></Link>
+              <Button text="MULAI TEST" href='/test1'/>
             </div>
           </div>
         </div>
@@ -214,7 +213,7 @@ function TestPage() {
     <div className='hidden md:flex justify-center lg:hidden'>
       <div className='flex-col container px-5'>
         {/*Top Content*/}
-        <div className='mt-[50px]'>
+        <div className='mt-40'>
             <div className='flex justify-center' data-aos="fade-down">
               <img src='images/herotest-image.svg' alt="vector_testimage" className='w-[400px]'/>
             </div>
@@ -225,16 +224,16 @@ function TestPage() {
                 <p className='text-xl font-normal w-[700px] mt-[15px]' data-aos="zoom-in-up" data-aos-delay="600">FamCare menghadirkan layanan berupa test agar dapat membantu mengukur dan juga mengetahui kondisi terkini dari diri anda yang berkaitan dengan tingkat kecemasan yang sedang dialami.</p>
               </div>
             </div>
-            <div className=' flex flex-row justify-center mt-[60px]'>
-              <a href="#Alur--Test" data-aos="fade-down" data-aos-delay="700"><Button title="ALUR TEST"/></a>
-              <a href="#Panduan--Test" className='ml-[30px]' data-aos="fade-down" data-aos-delay="800"><Button title="PANDUAN TEST"/></a>
-              <Link to={`/test1`} className='ml-[30px]' data-aos="fade-down" data-aos-delay="900"><Button title="MULAI TEST"/></Link>
+            <div className='flex-initial justify-center ml-[80px] mt-[30px] w-[600px]' data-aos="fade-down" data-aos-delay="1000">
+              <Button href='#Alur--Test' text="ALUR TEST"/>
+              <Button className='ml-[15px]' href='#Panduan--Test' text="PANDUAN TEST"/>
+              <Button className='ml-[15px]' href='/test1' text="MULAI TEST" />
             </div>
         </div>
 
         {/*Alur Test*/}
-        <div id='Alur--Test' className='flex flex-col container px-5 mt-[180px] '>
-          <h2 className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="200">Alur Test</h2>
+        <div className='flex flex-col container px-5 mt-[180px] '>
+          <h2 id='Alur--Test' className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="200">Alur Test</h2>
           <div className='mt-[80px]'>
             <div className='flex justify-center' data-aos="fade-right">
                <img src='images/kliktombol-images.svg' className='w-[100px]'/>
@@ -265,8 +264,8 @@ function TestPage() {
         </div>        
 
         {/*Panduan Test*/}
-        <div id='Panduan--Test' className='flex flex-col container px-5 mt-[180px]'>
-          <h2 className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down">Panduan Test</h2>
+        <div className='flex flex-col container px-5 mt-[180px]'>
+          <h2 id='Panduan--Test' className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down">Panduan Test</h2>
           <div className='flex justify-center mt-[80px]' data-aos="zoom-in-down">
             <img src='images/panduan-test.svg' className='w-[375px]'/>
           </div>
@@ -302,7 +301,7 @@ function TestPage() {
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
-              <Link to={`/test1`} ><Button title="MULAI TEST"/></Link>
+              <Button text="MULAI TEST" href='/test1'/>
             </div>
           </div>
         </div>
@@ -314,27 +313,27 @@ function TestPage() {
     <div className='hidden lg:flex justify-center p-0 m-0  xl:hidden'>
       <div className='flex-col container px-5'>
         {/*Top Content*/}
-        <div className='flex flex-row justify-center mt-24'>
-          <img src='images/herotest-image.svg' alt="vector_testimage" className='w-[326px] ml-14' data-aos="zoom-in"/>
+        <div className='flex flex-row justify-center mt-40'>
+          <img src='images/herotest-image.svg' alt="vector_testimage" className='w-[366px] ml-14' data-aos="zoom-in"/>
           <div className='flex flex-col ml-14 mt-[80px]'>
             <div className='flex flex-col'>
               <p className='text-xl font-medium' data-aos="fade-right" data-aos-delay="400"><span className='underline decoration-auto'>Yuk Check Kondisimu</span>!</p>
               <h2 className='text-4xl font-bold mt-[20px]' data-aos="fade-right" data-aos-delay="500">TEST KECEMASAN</h2>
               <p className='text-[15px] font-normal px-[5] w-[550px] h-[100px] mt-[20px]' data-aos="fade-right" data-aos-delay="600">FamCare menghadirkan layanan berupa test agar dapat membantu mengukur dan juga mengetahui kondisi terkini dari diri anda yang berkaitan dengan tingkat kecemasan yang sedang dialami.</p>
             </div>
-            <div className='flex felx-row mt-[5px] w-[600px]'>
-              <a href="#Alur-Test" data-aos="fade-down" data-aos-delay="900"><Button title="ALUR TEST" /></a>
-              <a href="#Panduan-Test" className='ml-[15px]' data-aos="fade-down" data-aos-delay="1000"><Button title="PANDUAN TEST"/></a>
-              <Link to={`/test1`} className='ml-[15px]' data-aos="fade-down" data-aos-delay="1100"><Button title="MULAI TEST"/></Link>
+            <div className='flex-initial w-[600px]' data-aos="fade-down" data-aos-delay="1000">
+              <Button href='#Alur-Test' text="ALUR TEST"/>
+              <Button className='ml-[15px]' href='#Panduan-Test' text="PANDUAN TEST"/>
+              <Button className='ml-[15px]' href='/test1' text="MULAI TEST" />
             </div>
           </div>
         </div>
         {/*Alur Test*/}
-        <div id="Alur-Test" className='flex flex-col mt-40'>
-          <h2 className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="1300">Alur Test</h2>
+        <div className='flex flex-col mt-52'>
+          <h2 id="Alur-Test" className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="1300">Alur Test</h2>
           <div className='flex flex-row justify-center mt-[80px]'>
             <div className='flex flex-col mx-[15px]'>
-              <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="1400">
+              <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="100">
                 <img src='images/kliktombol-images.svg' className='w-[90px]'/>
               </div>
               <h3 className='text-center text-xl font-bold mt-[10px]' data-aos="fade-up" data-aos-delay="100">Klik Mulai Test</h3>
@@ -342,7 +341,7 @@ function TestPage() {
             </div>
 
             <div className='flex flex-col mx-[15px]'>
-              <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="1500">
+              <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="100">
                 <img src='images/kerjakantest-image.svg' className='w-[90px]'/>
               </div>
               <h3 className='text-center text-xl font-bold mt-[10px]' data-aos="fade-up" data-aos-delay="200">Kerjakan Test</h3>
@@ -350,7 +349,7 @@ function TestPage() {
             </div>
             
             <div className='flex flex-col mx-[15px]'>
-              <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="1600">
+              <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="100">
                 <img src='images/hasiltest-image.svg' className='w-[90px]'/>
               </div>
               <h3 className='text-center text-xl font-bold mt-[10px]' data-aos="fade-up" data-aos-delay="300">Dapatkan Hasil Test</h3>
@@ -359,8 +358,8 @@ function TestPage() {
           </div>
         </div> 
         {/*Panduan Test*/}
-        <div id="Panduan-Test" className='flex flex-col mt-32'>
-          <h2 className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down">Panduan Test</h2>
+        <div className='flex flex-col mt-32'>
+          <h2 id="Panduan-Test" className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down">Panduan Test</h2>
           <div className='flex flex-row mt-[80px] justify-center'>
             <div className='flex flex-col mt-[10px]'>
               <div className='flex'>
@@ -380,7 +379,7 @@ function TestPage() {
           </div>
         </div>
         {/*Anxiety Test*/}
-        <div className='flex flex-col mt-32 mb-[150px]'>
+        <div className='flex flex-col mt-32 mb-40'>
           <h2 className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down">Anxiety Test / Test Kecemasan</h2>
           <div className='flex flex-row mt-[50px] justify-center'>
             <div className=''>
@@ -397,8 +396,8 @@ function TestPage() {
                   <li data-aos="fade-left">Metode HARS sendiri merupakan salah satu metode yang dapat digunakan untuk mengukur tingkat kecemasan seseorang. Skala HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran kecemasan.</li>
                 </ul>
               </div>
-              <div className='flex felx-row mt-[20px]' data-aos="fade-down">
-                <Link to={`/test1`} ><Button title="MULAI TEST"/></Link>
+              <div className='flex flex-row mt-[20px]' data-aos="fade-down">
+                <Button text="MULAI TEST" href='/test1'/>
               </div>
             </div>
           </div>
@@ -411,7 +410,7 @@ function TestPage() {
     <div className='hidden xl:flex justify-center p-0 m-0'>
       <div className='flex-col container px-5'>
         {/*Top Content*/}
-        <div className='flex flex-row justify-center mt-24'>
+        <div className='flex flex-row justify-center mt-40'>
           <img src='images/herotest-image.svg' alt="vector_testimage" className='w-[426px]' data-aos="zoom-in"/>
           <div className='flex flex-col ml-20 mt-[100px]'>
             <div className='flex flex-col'>
@@ -419,16 +418,18 @@ function TestPage() {
               <h2 className='text-5xl font-bold mt-[20px]' data-aos="fade-right"  data-aos-delay="500">TEST KECEMASAN</h2>
               <p className='text-[18px] font-normal px-[5] w-[550px] h-[100px] mt-[20px]' data-aos="fade-right"  data-aos-delay="600" >FamCare menghadirkan layanan berupa test agar dapat membantu mengukur dan juga mengetahui kondisi terkini dari diri anda yang berkaitan dengan tingkat kecemasan yang sedang dialami.</p>
             </div>
-            <div className='flex felx-row mt-[35px] w-[600px]'>
-              <a href="#AlurTest" data-aos="fade-down" data-aos-delay="900"><Button title="ALUR TEST"/></a>
-              <a href="#PanduanTest" className='ml-[15px]' data-aos="fade-down" data-aos-delay="1000"><Button title="PANDUAN TEST"/></a>
-              <Link to={`/test1`} className='ml-[15px]' data-aos="fade-down" data-aos-delay="1100"><Button title="MULAI TEST"/></Link>
+            <div className='flex-initial mt-[35px] w-[600px]'>
+              <div data-aos="fade-down" data-aos-delay="1000">
+                <Button href='#AlurTest' text="ALUR TEST"/>
+                <Button className='ml-[15px]' href='#PanduanTest' text="PANDUAN TEST"/>
+                <Button className='ml-[15px]' href='/test1' text="MULAI TEST" />
+              </div>
             </div>
           </div>
         </div>
         {/*Alur Test*/}
-        <div id="AlurTest" className='flex flex-col mt-40'>
-          <h2 className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="1300">Alur Test</h2>
+        <div className='flex flex-col mt-52'>
+          <h2 id="AlurTest" className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="1300">Alur Test</h2>
           <div className='flex flex-row justify-center mt-[80px]'>
             <div className='flex flex-col mx-[15px]'>
               <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="100">
@@ -456,8 +457,8 @@ function TestPage() {
           </div>
         </div> 
         {/*Panduan Test*/}
-        <div id="PanduanTest" className='flex flex-col mt-32'>
-          <h2 className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="200">Panduan Test</h2>
+        <div className='flex flex-col mt-32'>
+          <h2  id="PanduanTest" className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="200">Panduan Test</h2>
           <div className='flex flex-row mt-[80px] justify-center'>
             <div className='flex flex-col mt-[10px]'>
               <div className='flex'>
@@ -477,7 +478,7 @@ function TestPage() {
           </div>
         </div>
         {/*Anxiety Test*/}
-        <div className='flex flex-col mt-32 mb-[150px]'>
+        <div className='flex flex-col mt-32 mb-40'>
           <h2 className='text-center text-5xl font-bold mt-[20px]' data-aos="fade-down">Anxiety Test / Test Kecemasan</h2>
           <div className='flex flex-row mt-[50px] justify-center'>
             <div className='' data-aos="fade-right">
@@ -495,7 +496,7 @@ function TestPage() {
                 </ul>
               </div>
               <div className='flex flex-row mt-[20px]' data-aos="fade-down">
-                <Link to={`/test1`} ><Button title="MULAI TEST"/></Link>
+                <Button text="MULAI TEST" href='/test1'/>
               </div>
             </div>
           </div>
