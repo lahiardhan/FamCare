@@ -1,9 +1,10 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Loading from './components/Loading';
+import { getArticleList } from './utils/news-api';
 
 const Page404 = Loadable({
   loader: () => import('./pages/404'),
@@ -31,6 +32,8 @@ const AboutUs = Loadable({
 });
 
 function App() {
+  const [articles, setArticles] = useState([]);
+
   useEffect(() => {
     const loader = document.getElementById('startingLoader');
     window.onload = () => {
@@ -38,6 +41,10 @@ function App() {
         loader.remove();
       }
     };
+
+    getArticleList().then(({ articles }) => {
+      setArticles(articles);
+    });
   }, []);
 
   return (
@@ -50,7 +57,7 @@ function App() {
           <Route path="/*" element={<Page404 />} />
           <Route path="/" element={<LandingPage />} />
           <Route path="/test" element={<TestPage />} />
-          <Route path="/article" element={<Article />} />
+          <Route path="/article" element={<Article articles={articles} />} />
           <Route path="/forum" element={<DiscussionForum />} />
           <Route path="/about" element={<AboutUs />} />
         </Routes>
