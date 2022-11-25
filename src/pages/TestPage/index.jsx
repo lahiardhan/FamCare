@@ -7,8 +7,109 @@ AOS.init();
 function TestPage() {
   return (
     <>
+    {/*Scale under 550px*/}
+    <div className='flex justify-center xs:hidden'>
+      <div className='flex-col container px-5'>
+        {/*Top Content*/}
+        <div className='mt-40'>
+            <div className='flex justify-center' data-aos="fade-down">
+              <img src='images/herotest-image.svg' alt="vector_testimage" className='w-[300px]'/>
+            </div>
+            <div className='flex flex-col text-center mt-[50px]'>
+              <p className='text-lg font-medium' data-aos="zoom-in-up" data-aos-delay="400"><span className='underline decoration-auto'>Yuk Check Kondisimu</span>!</p>
+              <h2 className='text-4xl font-extrabold mt-[10px]' data-aos="zoom-in-up" data-aos-delay="500">TEST KECEMASAN</h2>
+              <div className='flex justify-center'>
+                <p className='text-base font-normal w-[450px] mt-[15px]' data-aos="zoom-in-up" data-aos-delay="600">FamCare menghadirkan layanan berupa test agar dapat membantu mengukur dan juga mengetahui kondisi terkini dari diri anda yang berkaitan dengan tingkat kecemasan yang sedang dialami.</p>
+              </div>
+            </div>
+            <div className='flex flex-row justify-center mt-[50px]' data-aos="fade-down" data-aos-delay="1000">
+              <Button href='#Alur---Test--' text="ALUR TEST"/>
+              <Button href='#Panduan---Test--' text="PANDUAN TEST" className='ml-[15px]'/>
+            </div>
+            <div className='flex justify-center mt-[20px]'data-aos="fade-down" data-aos-delay="1200">
+              <Button href='/test1' text="MULAI TEST" />
+            </div>
+        </div>
+
+        {/*Alur Test*/}
+        <div className='flex flex-col container px-5 mt-[180px] '>
+          <h2 id='Alur---Test--' className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="200">Alur Test</h2>
+          <div className='mt-[80px]'>
+            <div className='flex justify-center' data-aos="fade-right">
+               <img src='images/kliktombol-images.svg' className='w-[80px]'/>
+            </div>
+            <h3 className='text-center text-2xl font-semibold mt-[20px]' data-aos="fade-left">Klik Mulai Test</h3>
+            <div className='flex justify-center'>
+              <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Anda dapat melakukan test ini setelah menekan tombol mulai test.</p>
+            </div>
+          </div>
+          <div className='flex flex-col mt-[50px]'>
+            <div className='flex justify-center' data-aos="fade-right">
+              <img src='images/kerjakantest-image.svg' className='w-[100px]'/>
+            </div>
+            <h3 className='text-center text-2xl font-semibold mt-[20px]' data-aos="fade-left">Kerjakan Test</h3>
+            <div className='flex justify-center'>
+               <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Memulai mengerjakan test dengan beberapa pertanyaan yang sudah disediakan.</p>
+            </div>
+          </div>
+          <div className='flex flex-col mt-[50px]'>
+            <div className='flex justify-center' data-aos="fade-right">
+              <img src='images/hasiltest-image.svg' className='w-[90px]'/>
+            </div>
+            <h3 className='text-center text-2xl font-semibold mt-[20px]' data-aos="fade-left">Dapatkan Hasil Test</h3>
+            <div className='flex justify-center'>
+              <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Dapatkan hasil akhir berupa kondisi tingkat kecemasan anda dan juga dapatkan tips serta trick dalam menangani kecemasan anda.</p>
+            </div>
+           </div>
+        </div>
+
+        {/*Panduan Test*/}
+        <div className='flex flex-col container px-5 mt-[180px]'>
+          <h2 id='Panduan---Test--' className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down">Panduan Test</h2>
+          <div className='flex justify-center mt-[80px]' data-aos="zoom-in-down">
+            <img src='images/panduan-test.svg' className='w-[325px]'/>
+          </div>
+          <div className='flex flex-col mt-[50px]'>
+            <div className='flex justify-center' data-aos="fade-right">
+              <h2 className='text-center text-2xl font-semibold w-[437px]'>Panduan Dalam Pengerjaan Anxiety Test / Test Kecemasan</h2>
+            </div>
+            <div className='flex justify-center container px-5 mt-[40px] ml-[10px]'>
+              <ol className='list-decimal text-justify text-base font-normal w-[340px]'>
+                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+        {/*Anxiety Test*/}
+        <div className='flex flex-col container px-5 mt-[180px] pb-[85px]'>
+          <h2 className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down">Anxiety Test / Test Kecemasan</h2>
+          <div className='flex justify-center mt-[60px]' data-aos="zoom-in-down">
+            <img src='images/test-image.svg' className='w-[325px]'/>
+          </div>
+          <div className='flex flex-col mt-[50px]'>
+            <div className='flex justify-center'>
+              <h2 className='text-center text-2xl font-semibold w-[437px]' data-aos="fade-right">Skala Kecemasan Hamilton Anxiety Rating Scale (HARS)</h2>
+            </div>
+            <div className='flex justify-center container px-5 mt-[40px]'>
+              <ul className='list-none text-justify text-base font-normal w-[340px]'>
+                <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu metode yang digunakan untuk mengukur kondisi seseorang yaitu tingkat kecemasan yang sedang dialami.</li>
+                <br/>
+                <li data-aos="fade-left">Metode HARS sendiri merupakan salah satu metode yang dapat digunakan untuk mengukur tingkat kecemasan seseorang. Skala HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran kecemasan.</li>
+              </ul>
+            </div>
+            <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
+              <Button text="MULAI TEST" href='/test1'/>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     {/*Scale xs 550px*/}
-    <div className='flex justify-center sm:hidden'>
+    <div className='hidden xs:flex justify-center sm:hidden'>
       <div className='flex-col container px-5'>
         {/*Top Content*/}
         <div className='mt-40'>
@@ -310,7 +411,7 @@ function TestPage() {
 
 
     {/*Scale lg 1024px*/}
-    <div className='hidden lg:flex justify-center p-0 m-0  xl:hidden'>
+    <div className='hidden lg:flex justify-center p-0 m-0 xl:hidden'>
       <div className='flex-col container px-5'>
         {/*Top Content*/}
         <div className='flex flex-row justify-center mt-40'>
@@ -333,7 +434,7 @@ function TestPage() {
           <h2 id="Alur-Test" className='text-center text-4xl font-bold mt-[20px]' data-aos="fade-down" data-aos-delay="1300">Alur Test</h2>
           <div className='flex flex-row justify-center mt-[80px]'>
             <div className='flex flex-col mx-[15px]'>
-              <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="100">
+              <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="1000">
                 <img src='images/kliktombol-images.svg' className='w-[90px]'/>
               </div>
               <h3 className='text-center text-xl font-bold mt-[10px]' data-aos="fade-up" data-aos-delay="100">Klik Mulai Test</h3>
@@ -341,7 +442,7 @@ function TestPage() {
             </div>
 
             <div className='flex flex-col mx-[15px]'>
-              <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="100">
+              <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="1000">
                 <img src='images/kerjakantest-image.svg' className='w-[90px]'/>
               </div>
               <h3 className='text-center text-xl font-bold mt-[10px]' data-aos="fade-up" data-aos-delay="200">Kerjakan Test</h3>
@@ -349,7 +450,7 @@ function TestPage() {
             </div>
             
             <div className='flex flex-col mx-[15px]'>
-              <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="100">
+              <div className='flex justify-center' data-aos="zoom-in" data-aos-delay="1000">
                 <img src='images/hasiltest-image.svg' className='w-[90px]'/>
               </div>
               <h3 className='text-center text-xl font-bold mt-[10px]' data-aos="fade-up" data-aos-delay="300">Dapatkan Hasil Test</h3>
