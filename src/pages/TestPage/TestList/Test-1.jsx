@@ -10,7 +10,7 @@ function Test1() {
   }
 
   return (
-    <TestSection 
+    <TestSection
       no="1"
       title="Perasaan Ansietas / Kecemasan"
       score={score}

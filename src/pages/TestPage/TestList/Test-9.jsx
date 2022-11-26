@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import TestSection from '../../components/organisms/TestSection';
+import TestSection from '../../../components/organisms/TestSection';
 
 function Test9() {
   const [score, setScore] = useState(localStorage.getItem("test9") || 0);
