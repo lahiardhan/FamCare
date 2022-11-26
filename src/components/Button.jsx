@@ -3,9 +3,13 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-function Button({ text, href, link, target, className }) {
+function Button({ text, href, link, target, className, popUpModal }) {
   return (
-    <button type="button" className={`${className} py-2 px-7 bg-secondary-color text-white text-base font-semibold cursor-pointer max-w-fit rounded-full duration-200 hover:bg-[#079C89] sm:text-lg`}>
+    <button 
+      type="button"
+      data-modal-toggle={popUpModal}
+      className={`${className} py-2 px-7 bg-secondary-color text-white text-base font-semibold cursor-pointer max-w-fit rounded-full duration-200 hover:bg-[#079C89] sm:text-lg`}
+    >
       {href ? 
         <a href={href} target={target}>
           {text}
