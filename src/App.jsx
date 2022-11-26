@@ -31,59 +31,59 @@ const AboutUs = Loadable({
   loading: Loading,
 });
 const Test1 = Loadable({
-  loader: () => import('./pages/TestPage/Test-1'),
+  loader: () => import('./pages/TestPage/TestList/Test-1'),
   loading: Loading,
 });
 const Test2 = Loadable({
-  loader: () => import('./pages/TestPage/Test-2'),
+  loader: () => import('./pages/TestPage/TestList/Test-2'),
   loading: Loading,
 });
 const Test3 = Loadable({
-  loader: () => import('./pages/TestPage/Test-3'),
+  loader: () => import('./pages/TestPage/TestList/Test-3'),
   loading: Loading,
 });
 const Test4 = Loadable({
-  loader: () => import('./pages/TestPage/Test-4'),
+  loader: () => import('./pages/TestPage/TestList/Test-4'),
   loading: Loading,
 });
 const Test5 = Loadable({
-  loader: () => import('./pages/TestPage/Test-5'),
+  loader: () => import('./pages/TestPage/TestList/Test-5'),
   loading: Loading,
 });
 const Test6 = Loadable({
-  loader: () => import('./pages/TestPage/Test-6'),
+  loader: () => import('./pages/TestPage/TestList/Test-6'),
   loading: Loading,
 });
 const Test7 = Loadable({
-  loader: () => import('./pages/TestPage/Test-7'),
+  loader: () => import('./pages/TestPage/TestList/Test-7'),
   loading: Loading,
 });
 const Test8 = Loadable({
-  loader: () => import('./pages/TestPage/Test-8'),
+  loader: () => import('./pages/TestPage/TestList/Test-8'),
   loading: Loading,
 });
 const Test9 = Loadable({
-  loader: () => import('./pages/TestPage/Test-9'),
+  loader: () => import('./pages/TestPage/TestList/Test-9'),
   loading: Loading,
 });
 const Test10 = Loadable({
-  loader: () => import('./pages/TestPage/Test-10'),
+  loader: () => import('./pages/TestPage/TestList/Test-10'),
   loading: Loading,
 });
 const Test11 = Loadable({
-  loader: () => import('./pages/TestPage/Test-11'),
+  loader: () => import('./pages/TestPage/TestList/Test-11'),
   loading: Loading,
 });
 const Test12 = Loadable({
-  loader: () => import('./pages/TestPage/Test-12'),
+  loader: () => import('./pages/TestPage/TestList/Test-12'),
   loading: Loading,
 });
 const Test13 = Loadable({
-  loader: () => import('./pages/TestPage/Test-13'),
+  loader: () => import('./pages/TestPage/TestList/Test-13'),
   loading: Loading,
 });
 const Test14 = Loadable({
-  loader: () => import('./pages/TestPage/Test-14'),
+  loader: () => import('./pages/TestPage/TestList/Test-14'),
   loading: Loading,
 });
 const HasilTest = Loadable({
