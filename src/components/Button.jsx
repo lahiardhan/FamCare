@@ -29,6 +29,7 @@ Button.propTypes = {
   link: PropTypes.string,
   target: PropTypes.string,
   className: PropTypes.string,
+  popUpModal: PropTypes.string,
 }
 
 export default Button;
