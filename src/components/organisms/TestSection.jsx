@@ -36,7 +36,7 @@ function TestSection({ no, title, description, image, score, onSliderChange, nex
             {no !== '14' ? (
               <Button text='Selanjutnya' link={next} />
             ) : (
-              <Button text='Selesai' link={next} popUpModal="finish-test-modal" />
+              <Button text='Selesai' href={next} popUpModal="finish-test-modal" />
             )}
           </div>
         </div>

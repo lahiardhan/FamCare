@@ -17,7 +17,7 @@ function Test14() {
       onSliderChange={onSliderChange}
       image='test14-images.svg'
       prev='/test13'
-      next='/hasiltest'
+      next='/hasil'
       description="Seberapa besar anda sedang mengalami gejala seperti gelisah, tidak tenang, jari gemetar, mengerutkan dahi atau kening, muka tegang untuk saat ini ?" 
     />
   );

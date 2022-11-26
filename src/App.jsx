@@ -117,25 +117,25 @@ function App() {
         <Routes>
           <Route path="/*" element={<Page404 />} />
           <Route path="/" element={<LandingPage />} />
-          <Route path="/test" element={<TestPage />} />
-          <Route path="/article" element={<Article articles={articles} />} />
-          <Route path="/forum" element={<DiscussionForum />} />
-          <Route path="/about" element={<AboutUs />} />
-          <Route path="/test1" element={<Test1 />} />
-          <Route path="/test2" element={<Test2 />} />
-          <Route path="/test3" element={<Test3 />} />
-          <Route path="/test4" element={<Test4 />} />
-          <Route path="/test5" element={<Test5 />} />
-          <Route path="/test6" element={<Test6 />} />
-          <Route path="/test7" element={<Test7 />} />
-          <Route path="/test8" element={<Test8 />} />
-          <Route path="/test9" element={<Test9 />} />
-          <Route path="/test10" element={<Test10 />} />
-          <Route path="/test11" element={<Test11 />} />
-          <Route path="/test12" element={<Test12 />} />
-          <Route path="/test13" element={<Test13 />} />
-          <Route path="/test14" element={<Test14 />} />
-          <Route path="/hasiltest" element={<HasilTest />} />
+          <Route path="test" element={<TestPage />} />
+          <Route path="article" element={<Article articles={articles} />} />
+          <Route path="forum" element={<DiscussionForum />} />
+          <Route path="about" element={<AboutUs />} />
+          <Route path="test1" element={<Test1 />} />
+          <Route path="test2" element={<Test2 />} />
+          <Route path="test3" element={<Test3 />} />
+          <Route path="test4" element={<Test4 />} />
+          <Route path="test5" element={<Test5 />} />
+          <Route path="test6" element={<Test6 />} />
+          <Route path="test7" element={<Test7 />} />
+          <Route path="test8" element={<Test8 />} />
+          <Route path="test9" element={<Test9 />} />
+          <Route path="test10" element={<Test10 />} />
+          <Route path="test11" element={<Test11 />} />
+          <Route path="test12" element={<Test12 />} />
+          <Route path="test13" element={<Test13 />} />
+          <Route path="test14" element={<Test14 />} />
+          <Route path="hasil" element={<HasilTest />} />
         </Routes>
       </main>
       <Footer />
