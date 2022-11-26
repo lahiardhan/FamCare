@@ -5,6 +5,14 @@ import 'aos/dist/aos.css';
 AOS.init();
 
 function TestPage() {
+  let numberOfTest = 14;
+
+  function onStartTestClick() {
+    for (let i = 1; i <= numberOfTest; i++) {
+      localStorage.removeItem(`test${i}`);
+    }
+  };
+
   return (
     <>
     {/*Scale under 550px*/}
@@ -27,7 +35,7 @@ function TestPage() {
               <Button href='#Panduan---Test--' text="PANDUAN TEST" className='ml-[15px]'/>
             </div>
             <div className='flex justify-center mt-[20px]'data-aos="fade-down" data-aos-delay="1200">
-              <Button href='/test1' text="MULAI TEST" />
+              <Button href='/test1' text="MULAI TEST" onClick={onStartTestClick} />
             </div>
         </div>
 
@@ -101,7 +109,7 @@ function TestPage() {
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
-              <Button text="MULAI TEST" href='/test1'/>
+              <Button text="MULAI TEST" onClick={onStartTestClick} href='/test1'/>
             </div>
           </div>
         </div>
@@ -127,7 +135,7 @@ function TestPage() {
               <div className='flex-initial w-[600px]'>
                 <Button href='#Alur--Test--' text="ALUR TEST"/>
                 <Button className='ml-[15px]' href='#Panduan--Test--' text="PANDUAN TEST"/>
-                <Button className='ml-[15px]' href='/test1' text="MULAI TEST" />
+                <Button className='ml-[15px]' href='/test1' text="MULAI TEST" onClick={onStartTestClick} />
               </div>
             </div>
         </div>
@@ -202,7 +210,7 @@ function TestPage() {
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
-              <Button text="MULAI TEST" href='/test1'/>
+              <Button text="MULAI TEST" onClick={onStartTestClick} href='/test1'/>
             </div>
           </div>
         </div>
@@ -228,7 +236,7 @@ function TestPage() {
             <div className='flex-initial justify-center ml-[25px] mt-[50px] w-[600px]' data-aos="fade-down" data-aos-delay="1000">
               <Button href='#Alur--Test-' text="ALUR TEST"/>
               <Button className='ml-[15px]' href='#Panduan--Test-' text="PANDUAN TEST"/>
-              <Button className='ml-[15px]' href='/test1' text="MULAI TEST" />
+              <Button className='ml-[15px]' href='/test1' text="MULAI TEST" onClick={onStartTestClick} />
             </div>
         </div>
 
@@ -302,7 +310,7 @@ function TestPage() {
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
-              <Button text="MULAI TEST" href='/test1'/>
+              <Button text="MULAI TEST" onClick={onStartTestClick} href='/test1'/>
             </div>
           </div>
         </div>
@@ -328,7 +336,7 @@ function TestPage() {
             <div className='flex-initial justify-center ml-[80px] mt-[30px] w-[600px]' data-aos="fade-down" data-aos-delay="1000">
               <Button href='#Alur--Test' text="ALUR TEST"/>
               <Button className='ml-[15px]' href='#Panduan--Test' text="PANDUAN TEST"/>
-              <Button className='ml-[15px]' href='/test1' text="MULAI TEST" />
+              <Button className='ml-[15px]' href='/test1' text="MULAI TEST" onClick={onStartTestClick} />
             </div>
         </div>
 
@@ -402,7 +410,7 @@ function TestPage() {
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
-              <Button text="MULAI TEST" href='/test1'/>
+              <Button text="MULAI TEST" onClick={onStartTestClick} href='/test1'/>
             </div>
           </div>
         </div>
@@ -425,7 +433,7 @@ function TestPage() {
             <div className='flex-initial w-[600px]' data-aos="fade-down" data-aos-delay="1000">
               <Button href='#Alur-Test' text="ALUR TEST"/>
               <Button className='ml-[15px]' href='#Panduan-Test' text="PANDUAN TEST"/>
-              <Button className='ml-[15px]' href='/test1' text="MULAI TEST" />
+              <Button className='ml-[15px]' href='/test1' text="MULAI TEST" onClick={onStartTestClick} />
             </div>
           </div>
         </div>
@@ -498,7 +506,7 @@ function TestPage() {
                 </ul>
               </div>
               <div className='flex flex-row mt-[20px]' data-aos="fade-down">
-                <Button text="MULAI TEST" href='/test1'/>
+                <Button text="MULAI TEST" onClick={onStartTestClick} href='/test1'/>
               </div>
             </div>
           </div>
@@ -523,7 +531,7 @@ function TestPage() {
               <div data-aos="fade-down" data-aos-delay="1000">
                 <Button href='#AlurTest' text="ALUR TEST"/>
                 <Button className='ml-[15px]' href='#PanduanTest' text="PANDUAN TEST"/>
-                <Button className='ml-[15px]' href='/test1' text="MULAI TEST" />
+                <Button className='ml-[15px]' href='/test1' text="MULAI TEST" onClick={onStartTestClick} />
               </div>
             </div>
           </div>
@@ -597,7 +605,7 @@ function TestPage() {
                 </ul>
               </div>
               <div className='flex flex-row mt-[20px]' data-aos="fade-down">
-                <Button text="MULAI TEST" href='/test1'/>
+                <Button text="MULAI TEST" onClick={onStartTestClick} href='/test1'/>
               </div>
             </div>
           </div>
