@@ -138,7 +138,6 @@ function App() {
           <Route path="hasil" element={<HasilTest />} />
         </Routes>
       </main>
-      <Footer />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import Button from '../../components/Button';
 import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Footer from '../../components/Footer';
 AOS.init();
 
 function TestPage() {
@@ -612,6 +613,7 @@ function TestPage() {
         </div>
       </div>
     </div>    
+    <Footer />
     </>
   );
 }
