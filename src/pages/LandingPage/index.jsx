@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../../components/Footer';
 import DaftarLayanan from '../../components/organisms/DaftarLayanan';
 import DetailLayanan from '../../components/organisms/DetailLayanan';
 import HeroElement from '../../components/organisms/HeroElement';
@@ -21,6 +22,8 @@ function LandingPage() {
         {/* TESTIMONIAL */}
         <TestimoniSection />
       </section>
+
+      <Footer />
     </>
   );
 }
