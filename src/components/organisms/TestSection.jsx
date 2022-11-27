@@ -1,8 +1,9 @@
 import React from 'react';
 import ButtonSlider from '../ButtonSlider';
 import Button from '../Button';
+import PropTypes from 'prop-types';
 
-function TestSection({ no, title, description, image, score, onSliderChange, next, prev }) {
+function TestSection({ no, title, description, image, score, onSliderChange, next, prev, onClick }) {
   return (
     <>
       <div className='flex justify-center mt-10'>
@@ -34,15 +35,27 @@ function TestSection({ no, title, description, image, score, onSliderChange, nex
           <div className={`flex ${prev ? 'justify-between' : 'justify-end'} mt-24 md:mt-32 lg:mt-40`}>
             <Button text='Sebelumnya' link={prev} className={prev ? 'block' : 'hidden'} />
             {no !== '14' ? (
-              <Button text='Selanjutnya' link={next} />
+              <Button text='Selanjutnya' link={next} onClick={onClick} />
             ) : (
-              <Button text='Selesai' href={next} popUpModal="finish-test-modal" />
+              <Button text='Selesai' href={next} popUpModal="finish-test-modal" onClick={onClick} />
             )}
           </div>
         </div>
       </div>
     </>
   )
+}
+
+TestSection.propTypes = {
+  no: PropTypes.string.isRequired, 
+  title: PropTypes.string.isRequired, 
+  description: PropTypes.string.isRequired, 
+  image: PropTypes.string.isRequired, 
+  score: PropTypes.string.isRequired, 
+  onSliderChange: PropTypes.func.isRequired, 
+  next: PropTypes.string, 
+  prev: PropTypes.string, 
+  onClick: PropTypes.string, 
 }
 
 export default TestSection;

@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import Navbar from './components/Navbar';
-import Footer from './components/Footer';
 import Loading from './components/Loading';
 import { getArticleList } from './utils/news-api';
 
