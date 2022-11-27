@@ -1,6 +1,7 @@
 import React from 'react';
 import ButtonSlider from '../ButtonSlider';
 import Button from '../Button';
+import PropTypes from 'prop-types';
 
 function TestSection({ no, title, description, image, score, onSliderChange, next, prev, onClick }) {
   return (
@@ -43,6 +44,18 @@ function TestSection({ no, title, description, image, score, onSliderChange, nex
       </div>
     </>
   )
+}
+
+TestSection.propTypes = {
+  no: PropTypes.string.isRequired, 
+  title: PropTypes.string.isRequired, 
+  description: PropTypes.string.isRequired, 
+  image: PropTypes.string.isRequired, 
+  score: PropTypes.string.isRequired, 
+  onSliderChange: PropTypes.func.isRequired, 
+  next: PropTypes.string, 
+  prev: PropTypes.string, 
+  onClick: PropTypes.string, 
 }
 
 export default TestSection;
