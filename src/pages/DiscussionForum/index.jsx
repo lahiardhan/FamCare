@@ -2,7 +2,10 @@ import React from 'react';
 
 function DiscussionForum() {
   return (
-    <div className="h-[100vh] w-full flex flex-col justify-center items-center">Copy paste kodingan page Forum Diskusi</div>
+    <section className='px-4 py-8 lg:px-32 lg:mt-20 flex flex-wrap justify-center'>
+      <div><h1>ini forum</h1></div>
+    </section>
+
   );
 }
 
