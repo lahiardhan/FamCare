@@ -22,7 +22,9 @@ function DiscussionForum() {
           </div>
           <div className="mt-8 shadow-lg rounded-lg">
             <div className="bg-secondary-color px-10 py-5 rounded-tr-lg rounded-tl-lg">
-              <h1 className="text-lg font-medium text-white lg:text-2xl">Judul Heading</h1>
+              <a href="/content">
+                <h1 className="text-lg font-medium text-white lg:text-2xl">Judul Heading</h1>
+                </a>
             </div>
             <div className="bg-gray-100 px-10 py-3 rounded-bl-lg rounded-br-lg">
               <p className="text-justify text-sm lg:text-base">

@@ -4,6 +4,7 @@ import Loadable from 'react-loadable';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Loading from './components/Loading';
+import Discussion from './pages/DiscussionForum/DiscussionList/Discussion';
 
 const Page404 = Loadable({
   loader: () => import('./pages/404'),
@@ -25,6 +26,10 @@ const DiscussionForum = Loadable({
   loader: () => import('./pages/DiscussionForum'),
   loading: Loading,
 });
+const DiscussionContent = Loadable({
+  loader: () => import('./pages/DiscussionForum/DiscussionList/Discussion'),
+  loading: Loading,
+})
 const AboutUs = Loadable({
   loader: () => import('./pages/AboutUs'),
   loading: Loading,
@@ -52,6 +57,7 @@ function App() {
           <Route path="/test" element={<TestPage />} />
           <Route path="/article" element={<Article />} />
           <Route path="/forum" element={<DiscussionForum />} />
+          <Route path='/content' element={<DiscussionContent/>}/>
           <Route path="/about" element={<AboutUs />} />
         </Routes>
       </main>
