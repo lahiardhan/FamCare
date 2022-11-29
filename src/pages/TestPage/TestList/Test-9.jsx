@@ -1,20 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import TestSection from '../../../components/organisms/TestSection';
+import useScoreInput from '../../../hooks/useScoreInput';
 
 function Test9() {
-  const [score, setScore] = useState(localStorage.getItem("test9") || 0);
-
-  function onSliderChange(e) {
-    setScore(e.target.value);
-    localStorage.setItem("test9", e.target.value);
-  }
+  const [ score, handleScoreChange ] = useScoreInput('test9');
 
   return (
     <TestSection 
       no="9"
       title="Gejala Kardiovaskuler (Jantung)"
       score={score}
-      onSliderChange={onSliderChange}
+      onSliderChange={handleScoreChange}
       image='test9-images.svg'
       prev='/test8'
       next='/test10'

@@ -6,12 +6,12 @@ import Footer from '../../components/Footer';
 AOS.init();
 
 function TestPage() {
-  let numberOfTest = 14;
-
   function onStartTestClick() {
+    const numberOfTest = 14;
     for (let i = 1; i <= numberOfTest; i++) {
-      localStorage.removeItem(`test${i}`);
+      localStorage.setItem(`test${i}`, 0);
     }
+    localStorage.setItem('total-score', 0);
   };
 
   return (
