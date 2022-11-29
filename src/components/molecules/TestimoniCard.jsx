@@ -30,8 +30,8 @@ function TestimoniCard({ testi, index, testiIndex }) {
 }
 
 TestimoniCard.propTypes = {
-  testi: PropTypes.object.isRequired, 
-  index: PropTypes.number.isRequired, 
+  testi: PropTypes.object.isRequired,
+  index: PropTypes.number.isRequired,
   testiIndex: PropTypes.number.isRequired,
 }
 

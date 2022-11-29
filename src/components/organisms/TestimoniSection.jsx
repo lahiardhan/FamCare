@@ -1,27 +1,27 @@
 import { Icon } from '@iconify/react';
 import React, { useState } from 'react';
 import Slider from 'react-slick';
-import {testimoniList} from '../../utils/testimoniList';
+import { testimoniList } from '../../utils/testimoniList';
 import TestimoniCard from '../molecules/TestimoniCard';
 
 function TestimoniSection() {
   const [testiIndex, setTestiIndex] = useState(0);
 
-  const NextArrow = ({onClick}) => {
+  const NextArrow = ({ onClick }) => {
     return (
-      <Icon 
-        className="z-10 text-secondary-color text-xl cursor-pointer duration-300 active:scale-75 absolute top-1/2 right-0" 
-        onClick={onClick} 
+      <Icon
+        className="z-10 text-secondary-color text-xl cursor-pointer duration-300 active:scale-75 absolute top-1/2 right-0"
+        onClick={onClick}
         icon="material-symbols:arrow-forward-ios-rounded"
       />
     )
   }
 
-  const PrevArrow = ({onClick}) => {
+  const PrevArrow = ({ onClick }) => {
     return (
-      <Icon 
-        className="z-10 text-secondary-color text-xl cursor-pointer duration-300 active:scale-75 absolute top-1/2 left-0" 
-        onClick={onClick} 
+      <Icon
+        className="z-10 text-secondary-color text-xl cursor-pointer duration-300 active:scale-75 absolute top-1/2 left-0"
+        onClick={onClick}
         icon="material-symbols:arrow-back-ios-rounded"
       />
     )

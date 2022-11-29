@@ -29,6 +29,14 @@ const AboutUs = Loadable({
   loader: () => import('./pages/AboutUs'),
   loading: Loading,
 });
+const Login = Loadable({
+  loader: () => import('./pages/Auth/Login'),
+  loading: Loading,
+});
+const Register = Loadable({
+  loader: () => import('./pages/Auth/Register'),
+  loading: Loading,
+});
 const Test1 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-1'),
   loading: Loading,
@@ -120,6 +128,8 @@ function App() {
           <Route path="article" element={<Article articles={articles} />} />
           <Route path="forum" element={<DiscussionForum />} />
           <Route path="about" element={<AboutUs />} />
+          <Route path="login" element={<Login />} />
+          <Route path="register" element={<Register />} />
           <Route path="test1" element={<Test1 />} />
           <Route path="test2" element={<Test2 />} />
           <Route path="test3" element={<Test3 />} />
