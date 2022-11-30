@@ -38,6 +38,9 @@ function Navbar() {
             <li>
               <Link to="/about" className="flex items-center px-3 py-2 hover-link duration-300">About Us</Link>
             </li>
+            <li>
+              <Link to="/login" className="flex items-center justify-center px-3 py-2 duration-300 bg-white text-secondary-color rounded-md">Login</Link>
+            </li>
           </ul>
         </div>
       </nav>
