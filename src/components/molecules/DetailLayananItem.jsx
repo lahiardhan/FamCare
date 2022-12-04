@@ -11,7 +11,7 @@ function DetailLayananItem({ title, image, description, buttonText, invertedPosi
       <div className={`flex flex-col justify-center mt-6 md:mt-0 ${invertedPosition ? 'md:col-start-1 md:row-start-1 md:items-end' : null}`}>
         <h3 className="text-2xl font-bold sm:text-4xl">{title}</h3>
         <p className={`mt-6 ${invertedPosition ? 'md:text-right' : null}`}>{description}</p>
-        <Button className="mt-4" href={href} text={buttonText} />
+        <Button className="mt-4 w-fit" href={href} text={buttonText} />
       </div>
     </div>
   );

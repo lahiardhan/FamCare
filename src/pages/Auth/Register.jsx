@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Button from '../../components/Button';
 
 function Register() {
     const [name, setName] = useState('');
@@ -62,11 +63,7 @@ function Register() {
                     </div>
                     <div className="space-y-2">
                         <div>
-                            <button
-                                type="button"
-                                className="w-full px-8 py-3 font-semibold rounded-md bg-secondary-color px-3 text-white"
-                                onClick={onSubmit}
-                            >Sign in</button>
+                            <Button text="Sign Up" onClick={onSubmit} className="w-full" />
                         </div>
                         <p className="px-6 text-sm text-center dark:text-gray-400">udah punya akun?
                             <a rel="noopener noreferrer" href="#" className="hover:text-secondary-color "> Login</a>.
