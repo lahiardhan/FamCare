@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from "react"
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { setLogin } from '../../utils/auth-api';
+import { setLogin } from '../../services/auth-api';
 import jwt_decode from "jwt-decode";
 import Cookies from 'js-cookie'
 
