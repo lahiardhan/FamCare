@@ -45,7 +45,7 @@ function AuthNavbar() {
 
   return (
     <li>
-      <Link to="/login" className="flex items-center justify-center px-5 py-2 duration-300 bg-white text-secondary-color rounded-lg">Login</Link>
+      <Link to="/login" className="flex items-center w-full justify-center px-5 py-2 duration-300 bg-white text-secondary-color rounded-lg hover:bg-neutral-100">Login</Link>
     </li>
   );
 };
