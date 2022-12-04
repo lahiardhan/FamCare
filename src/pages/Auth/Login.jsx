@@ -1,13 +1,22 @@
+import AOS from 'aos';
+import "aos/dist/aos.css";
 import Cookies from 'js-cookie';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Button from '../../components/Button';
+import AuthInput from '../../components/molecules/AuthInput';
 import { setLogin } from '../../services/auth-api';
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+
+  useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
 
   const onSubmit = async () => {
     const data = {
@@ -28,45 +37,23 @@ function Login() {
         window.location = "/";
       }
     }
+  };
 
-  }
   return (
-      <section className='px-4 py-16 mt-10 lg:px-32 lg:py-32 flex flex-wrap justify-center'>
-        <div className="flex flex-col max-w-md p-6 rounded-md sm:p-10 border border-secondary-color shadow-lg">
+      <section className='min-h-screen flex flex-col justify-center items-center px-4 pt-20'>
+        <div className="w-full xs:max-w-md p-6 bg-[#ffffff] rounded-md border border-secondary-color shadow-lg" data-aos="zoom-in">
           <div className="mb-8 text-center">
             <h1 className="my-3 text-4xl font-bold text-secondary-color">Login</h1>
           </div>
           <form novalidate="" action="" className="space-y-12 ng-untouched ng-pristine ng-valid">
             <div className="space-y-4">
-              <div>
-                <label for="email" className="block mb-2 text-sm">Email </label>
-                <input
-                  type="email"
-                  placeholder="huhu@dicoding.com"
-                  className="w-full px-3 py-2 border rounded-md border-secondary-color focus:border-primary-color "
-                  value={email}
-                  onChange={(event) => setEmail(event.target.value)}
-                />
-              </div>
-              <div>
-                <div className="flex justify-between mb-2">
-                  <label for="password" className="text-sm">Password</label>
-                </div>
-                <input
-                  type="password"
-                  placeholder="*****"
-                  className="w-full px-3 py-2 border rounded-md border-secondary-color  "
-                  value={password}
-                  onChange={(event) => setPassword(event.target.value)}
-                />
-              </div>
+              <AuthInput type="email" label="Email" placeholder="your@email.com" value={email} onChange={(event) => setEmail(event.target.value)} />
+              <AuthInput type="password" label="Password" placeholder="******" value={password} onChange={(event) => setPassword(event.target.value)} />
             </div>
             <div className="space-y-2">
-              <div>
-                <Button text="Sign In" onClick={onSubmit} className="w-full" />
-              </div>
-              <p className="px-6 text-sm text-center dark:text-gray-400">Don't have an account yet?
-                <a rel="noopener noreferrer" href="#" className="hover:text-secondary-color ">Sign up</a>.
+              <Button text="Sign In" onClick={onSubmit} className="w-full" />
+              <p className="px-6 text-sm text-center dark:text-gray-400">Kamu belum punya akun?
+                <Link to="/signup" className="underline duration-300 hover:text-secondary-color"> Sign Up</Link>
               </p>
             </div>
             <ToastContainer

@@ -1,10 +1,19 @@
-import React, { useState } from 'react'
+import AOS from 'aos';
+import "aos/dist/aos.css";
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
+import AuthInput from '../../components/molecules/AuthInput';
 
 function SignUp() {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
+
+	useEffect(() => {
+		AOS.init();
+		AOS.refresh();
+	}, []);
 
 	const onSubmit = () => {
 		console.log('email:', email);
@@ -13,60 +22,24 @@ function SignUp() {
 	};
 
 	return (
-		<section className='px-4 py-8 lg:px-32 mt-20 w-full'>
-			<div className=" max-w-lg p-6 rounded-md sm:p-10 border border-secondary-color shadow-lg">
+		<section className='min-h-screen flex flex-col justify-center items-center px-4 pt-20'>
+			<div className="w-full xs:max-w-md p-6 bg-[#ffffff] rounded-md border border-secondary-color shadow-lg" data-aos="zoom-out">
 				<div className="mb-8 text-center">
 					<h1 className="my-3 text-4xl font-bold text-secondary-color">Sign Up</h1>
-					<p className="text-sm ">Bikin akun dulu yaaa . . .</p>
+					<p className="text-sm ">Bikin akun dulu yaaa...</p>
 				</div>
-				<form novalidate="" action="" className="space-y-12 ng-untouched ng-pristine ng-valid">
+				<form noValidate="" action="" className="space-y-12 ng-untouched ng-pristine ng-valid">
 					<div className="space-y-4">
-						<div>
-							<label for="email" className="block mb-2 text-sm">Namanya Siapa?</label>
-							<input
-								type="name"
-								name="name"
-								id="name"
-								placeholder="gatot kaca"
-								className="w-full px-3 py-2 border rounded-md border-secondary-color focus:border-primary-color "
-								value={name}
-								onChange={(event) => setName(event.target.value)}
-							/>
-						</div>
-						<div>
-							<label for="email" className="block mb-2 text-sm">Emailnya juga dongg</label>
-							<input
-								type="email"
-								name="email"
-								id="email"
-								placeholder="gatotkaca@purl.com"
-								className="w-full px-3 py-2 border rounded-md border-secondary-color focus:border-primary-color "
-								value={email}
-								onChange={(event) => setEmail(event.target.value)}
-							/>
-						</div>
-						<div>
-							<div className="flex justify-between mb-2">
-								<label for="password" className="text-sm">Password</label>
-							</div>
-							<input
-								type="password"
-								name="password"
-								id="password"
-								placeholder="*****"
-								className="w-full px-3 py-2 border rounded-md border-secondary-color  "
-								value={password}
-								onChange={(event) => setPassword(event.target.value)}
-							/>
-
-						</div>
+						<AuthInput type="name" label="Namanya Siapa??" placeholder="Gatot Kaca" value={name} onChange={event => setName(event.target.value)} />
+						<AuthInput type="email" label="Emailnya juga dongg" placeholder="gatotkaca@purl.com" value={email} onChange={event => setEmail(event.target.value)} />
+						<AuthInput type="password" label="Yuk buat password kamu" placeholder="******" value={password} onChange={event => setPassword(event.target.value)} />
 					</div>
 					<div className="space-y-2">
 						<div>
 							<Button text="Sign Up" onClick={onSubmit} className="w-full" />
 						</div>
-						<p className="px-6 text-sm text-center dark:text-gray-400">udah punya akun?
-							<a rel="noopener noreferrer" href="#" className="hover:text-secondary-color "> Login</a>.
+						<p className="px-6 text-sm text-center dark:text-gray-400">Udah punya akun?
+							<Link to="/login" className="underline duration-300 hover:text-secondary-color">Login</Link>
 						</p>
 					</div>
 				</form>
