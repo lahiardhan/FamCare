@@ -39,9 +39,9 @@ function AboutUs() {
   };
 
   return (
-    <section>
+    <section className='py-10 lg:py-16'>
       <div>
-        <h1 className="font-extrabold text-4xl mt-24 lg:py-7 text-center" data-aos="fade-down">About Us</h1>
+        <h1 className="font-extrabold text-4xl mt-20  text-center" data-aos="fade-down">About Us</h1>
       </div>
       <div className='flex flex-wrap lg:px-32 '>
         <div className='w-full self-center px-4 mt-7 md:w-1/2'>
