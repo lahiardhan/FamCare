@@ -1,11 +1,18 @@
 import { Icon } from '@iconify/react';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from 'react-slick';
 import { testimoniList } from '../../utils/testimoniList';
 import TestimoniCard from '../molecules/TestimoniCard';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function TestimoniSection() {
   const [testiIndex, setTestiIndex] = useState(0);
+
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
 
   const NextArrow = ({ onClick }) => {
     return (
@@ -56,8 +63,8 @@ function TestimoniSection() {
   return (
     <section id="testimoni" className="w-full flex flex-col items-center py-8 px-4 lg:py-16 overflow-hidden">
       <div className="w-screen max-w-5xl px-2">
-        <h3 className="text-center text-[26px] font-bold sm:text-[40px]">Kata Mereka Tentang FamCare</h3>
-        <div className="w-full my-10">
+        <h3 className="text-center text-[26px] font-bold sm:text-[40px]" data-aos="fade-down" data-aos-duration="900">Kata Mereka Tentang FamCare</h3>
+        <div className="w-full my-10" data-aos="zoom-in" data-aos-duration="900">
           <Slider className="flex justify-center" {...settings}>
             {testimoniList.map((testi, index) => (
               <TestimoniCard key={index} testi={testi} index={index} testiIndex={testiIndex} />

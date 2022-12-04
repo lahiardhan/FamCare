@@ -12,7 +12,7 @@ function LandingPage() {
       <HeroElement />
 
       {/* MAIN */}
-      <section id="main" className="min-h-screen">
+      <section id="main" className="min-h-screen overflow-x-hidden">
         {/* LAYANAN */}
         <DaftarLayanan />
 
