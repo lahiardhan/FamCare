@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { hasiltestList } from '../../utils/hasiltestList';
 import Footer from '../../components/Footer';
+import Button from '../../components/Button';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
@@ -10,7 +11,7 @@ function HasilTest() {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
-  }, [])
+  }, []);
 
   const result = hasiltestList.filter((res) => totalScore >= res.score.low && totalScore <= res.score.high)[0];
   const tips = result.tips;
@@ -18,22 +19,26 @@ function HasilTest() {
   return (
     <>
       <section className="m-auto max-w-[1200px] min-h-screen w-full px-4 mb-32">
-        <div className="min-h-screen flex flex-col justify-center">
+        <div className="min-h-screen flex flex-col justify-center pt-20">
           <div className="font-extrabold md:grid md:grid-cols-2 md:gap-5 lg:gap-10">
-            <div className="md:row-start-1 md:col-start-1" data-aos="fade-right" data-aos-duration="700">
+            <div className="md:row-start-1 md:col-start-1" data-aos="fade-down">
               <h2 className="text-2xl xs:text-3xl"><span className="underline">Hasil</span> Test</h2>
             </div>
-            <div className="flex justify-center mt-10 md:col-start-2 md:mt-0" data-aos="zoom-in-down" data-aos-duration="700">
+            <div className="flex justify-center mt-10 md:col-start-2 md:mt-0" data-aos="zoom-in" data-aos-duration="700">
               <img className="max-w-lg" src={`/images/hasiltest/${result.statusPic}`} alt={result.status} />
             </div>
-            <div className="flex items-center mt-10 md:row-start-1 md:col-start-1 md:mt-0">
-              <h2 className="text-[22px] xs:text-3xl md:text-2xl lg:text-3xl" data-aos="zoom-in-up" data-aos-duration="700">
-                Saat ini anda berada pada<br />tingkat
-                <span className={`text-[${result.colorStatus}]`}> {result.status}</span>
-              </h2>
+            <div className="flex flex-col justify-end mt-10 md:row-start-1 md:col-start-1 md:mt-0">
+              <div className="h-[60%] flex flex-col justify-between">
+                <h2 className="text-[22px] xs:text-3xl md:text-2xl lg:text-3xl" data-aos="fade-right" data-aos-duration="700">
+                  Saat ini anda berada pada<br />tingkat
+                  <span className={`text-[${result.colorStatus}]`}> {result.status}</span>
+                </h2>
+                <div data-aos="zoom-in">
+                  <Button text="Kembali ke Beranda" href="/" className="z-10 mt-10" />
+                </div>
+              </div>
             </div>
           </div>
-
         </div>
 
         <div className="mt-32">
