@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
-import Navbar from './components/Navbar';
+import Navbar from './components/organisms/Navbar';
 import Loading from './components/Loading';
 import { getArticleList } from './services/news-api';
 
