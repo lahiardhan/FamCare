@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Button from '../../components/Button';
 
-function Register() {
+function SignUp() {
 	const [name, setName] = useState('');
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
@@ -16,7 +16,7 @@ function Register() {
 		<section className='px-4 py-8 lg:px-32 mt-20 w-full'>
 			<div className=" max-w-lg p-6 rounded-md sm:p-10 border border-secondary-color shadow-lg">
 				<div className="mb-8 text-center">
-					<h1 className="my-3 text-4xl font-bold text-secondary-color">Register</h1>
+					<h1 className="my-3 text-4xl font-bold text-secondary-color">Sign Up</h1>
 					<p className="text-sm ">Bikin akun dulu yaaa . . .</p>
 				</div>
 				<form novalidate="" action="" className="space-y-12 ng-untouched ng-pristine ng-valid">
@@ -75,4 +75,4 @@ function Register() {
 	)
 }
 
-export default Register
+export default SignUp;

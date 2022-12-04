@@ -33,8 +33,8 @@ const Login = Loadable({
   loader: () => import('./pages/Auth/Login'),
   loading: Loading,
 });
-const Register = Loadable({
-  loader: () => import('./pages/Auth/Register'),
+const SignUp = Loadable({
+  loader: () => import('./pages/Auth/SignUp'),
   loading: Loading,
 });
 const Test1 = Loadable({
@@ -129,7 +129,7 @@ function App() {
           <Route path="forum" element={<DiscussionForum />} />
           <Route path="about" element={<AboutUs />} />
           <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
+          <Route path="signup" element={<SignUp />} />
           <Route path="test1" element={<Test1 />} />
           <Route path="test2" element={<Test2 />} />
           <Route path="test3" element={<Test3 />} />
