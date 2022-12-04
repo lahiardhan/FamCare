@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import Button from '../../components/Button';
+import Button from '../../components/atoms/Button';
 import showFormattedDate from '../../utils/formattedDate';
 import PropTypes from 'prop-types';
 import Skeleton from './Skeleton';
-import Footer from '../../components/Footer';
+import Footer from '../../components/organisms/Footer';
 
 function Article({ articles }) {
   const [loading, setLoading] = useState(true);

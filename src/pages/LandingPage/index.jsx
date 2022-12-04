@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../../components/Footer';
+import Footer from '../../components/organisms/Footer';
 import DaftarLayanan from '../../components/organisms/DaftarLayanan';
 import DetailLayanan from '../../components/organisms/DetailLayanan';
 import HeroElement from '../../components/organisms/HeroElement';

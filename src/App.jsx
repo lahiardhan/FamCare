@@ -2,100 +2,100 @@ import React, { useEffect, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import Navbar from './components/organisms/Navbar';
-import Loading from './components/Loading';
+import Loader from './components/atoms/Loader';
 import { getArticleList } from './services/news-api';
 
 const Page404 = Loadable({
   loader: () => import('./pages/404'),
-  loading: Loading,
+  loading: Loader,
 });
 const LandingPage = Loadable({
   loader: () => import('./pages/LandingPage'),
-  loading: Loading,
+  loading: Loader,
 });
 const TestPage = Loadable({
   loader: () => import('./pages/TestPage'),
-  loading: Loading,
+  loading: Loader,
 });
 const Article = Loadable({
   loader: () => import('./pages/ArticlePage'),
-  loading: Loading,
+  loading: Loader,
 });
 const DiscussionForum = Loadable({
   loader: () => import('./pages/DiscussionForum'),
-  loading: Loading,
+  loading: Loader,
 });
 const AboutUs = Loadable({
   loader: () => import('./pages/AboutUs'),
-  loading: Loading,
+  loading: Loader,
 });
 const Login = Loadable({
   loader: () => import('./pages/Auth/Login'),
-  loading: Loading,
+  loading: Loader,
 });
 const SignUp = Loadable({
   loader: () => import('./pages/Auth/SignUp'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test1 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-1'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test2 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-2'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test3 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-3'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test4 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-4'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test5 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-5'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test6 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-6'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test7 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-7'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test8 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-8'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test9 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-9'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test10 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-10'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test11 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-11'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test12 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-12'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test13 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-13'),
-  loading: Loading,
+  loading: Loader,
 });
 const Test14 = Loadable({
   loader: () => import('./pages/TestPage/TestList/Test-14'),
-  loading: Loading,
+  loading: Loader,
 });
 const HasilTest = Loadable({
   loader: () => import('./pages/TestPage/HasilTest'),
-  loading: Loading,
+  loading: Loader,
 });
 
 

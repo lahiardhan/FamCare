@@ -2,7 +2,7 @@ import AOS from 'aos';
 import "aos/dist/aos.css";
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
-import Button from '../../components/Button';
+import Button from '../../components/atoms/Button';
 import AuthInput from '../../components/atoms/AuthInput';
 
 function SignUp() {

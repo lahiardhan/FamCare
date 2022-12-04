@@ -1,6 +1,6 @@
 import { Icon } from '@iconify/react';
 import React from 'react';
-import Button from '../Button';
+import Button from '../atoms/Button';
 import PropTypes from 'prop-types';
 
 function Card({ icon, title, description, bgColor, href, aosDuration }) {

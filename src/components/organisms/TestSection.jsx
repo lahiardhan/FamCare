@@ -1,6 +1,6 @@
 import React from 'react';
-import ButtonSlider from '../ButtonSlider';
-import Button from '../Button';
+import ButtonSlider from '../atoms/ButtonSlider';
+import Button from '../atoms/Button';
 import PropTypes from 'prop-types';
 
 function TestSection({ no, title, description, image, score, onSliderChange, next, prev, onClick }) {

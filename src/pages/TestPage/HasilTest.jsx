@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { hasiltestList } from '../../utils/hasiltestList';
-import Footer from '../../components/Footer';
-import Button from '../../components/Button';
+import Footer from '../../components/organisms/Footer';
+import Button from '../../components/atoms/Button';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 

@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import Button from '../../components/Button';
+import Button from '../../components/atoms/Button';
 import AuthInput from '../../components/atoms/AuthInput';
 import { setLogin } from '../../services/auth-api';
 

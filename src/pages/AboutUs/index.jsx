@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../../components/Footer';
+import Footer from '../../components/organisms/Footer';
 import Slider from 'react-slick';
 import { profilList } from '../../utils/profilList';
 import ProfilCard from '../../components/molecules/ProfilCard';
