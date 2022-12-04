@@ -63,8 +63,8 @@ function TestimoniSection() {
   return (
     <section id="testimoni" className="w-full flex flex-col items-center my-8 px-4 lg:my-16 overflow-hidden">
       <div className="w-screen max-w-5xl px-2">
-        <h3 className="text-center text-[26px] font-bold sm:text-[40px]" data-aos="fade-down" data-aos-duration="900">Kata Mereka Tentang FamCare</h3>
-        <div className="w-full my-10" data-aos="zoom-in" data-aos-duration="900">
+        <h3 className="text-center text-[26px] font-bold sm:text-[40px]" data-aos="fade-down" data-aos-delay="200" data-aos-duration="900">Kata Mereka Tentang FamCare</h3>
+        <div className="w-full my-10" data-aos="zoom-in" data-aos-delay="400" data-aos-duration="900">
           <Slider className="flex justify-center" {...settings}>
             {testimoniList.map((testi, index) => (
               <TestimoniCard key={index} testi={testi} index={index} testiIndex={testiIndex} />

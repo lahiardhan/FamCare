@@ -17,19 +17,19 @@ function DaftarLayanan() {
           icon="mdi:book-edit-outline" href="/test"
           title="Tes Kecemasan" bgColor="bg-gradient-to-b from-blue-500 to-blue-900"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore eteiusmo."
-          aosDuration="600"
+          aosDelay="300"
         />
         <Card
           icon="zondicons:news-paper" href="/article"
           title="Artikel" bgColor="bg-gradient-to-b from-secondary-color to-[#0f8072]"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore eteiusmo."
-          aosDuration="1000"
+          aosDelay="500"
         />
         <Card
           icon="fluent:chat-multiple-24-regular" href="/forum"
           title="Forum Diskusi" bgColor="bg-gradient-to-b from-purple-500 to-purple-900"
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore eteiusmo."
-          aosDuration="1400"
+          aosDelay="700"
         />
       </div>
     </section>
