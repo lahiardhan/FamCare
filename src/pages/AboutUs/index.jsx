@@ -33,7 +33,7 @@ function AboutUs() {
       />
     );
   };
-  
+
   const settings = {
     dots: true,
     infinite: true,
