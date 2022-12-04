@@ -3,7 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
 import Navbar from './components/Navbar';
 import Loading from './components/Loading';
-import { getArticleList } from './utils/news-api';
+import { getArticleList } from './services/news-api';
 
 const Page404 = Loadable({
   loader: () => import('./pages/404'),
