@@ -3,7 +3,7 @@ import "aos/dist/aos.css";
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
 import Button from '../../components/Button';
-import AuthInput from '../../components/molecules/AuthInput';
+import AuthInput from '../../components/atoms/AuthInput';
 
 function SignUp() {
 	const [name, setName] = useState('');

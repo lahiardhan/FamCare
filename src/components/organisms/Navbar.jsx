@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import AuthNavbar from '../molecules/AuthNavbar';
+import AuthNavbar from '../atoms/AuthNavbar';
 
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
