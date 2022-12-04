@@ -23,7 +23,7 @@ function SignUp() {
 
 	return (
 		<section className='min-h-screen flex flex-col justify-center items-center px-4 pt-20'>
-			<div className="w-full xs:max-w-md p-6 bg-[#ffffff] rounded-md border border-secondary-color shadow-lg" data-aos="zoom-out">
+			<div className="w-full xs:max-w-md p-6 bg-[#ffffff] rounded-md border border-secondary-color shadow-lg" data-aos="zoom-in">
 				<div className="mb-8 text-center">
 					<h1 className="my-3 text-4xl font-bold text-secondary-color">Sign Up</h1>
 					<p className="text-sm ">Bikin akun dulu yaaa...</p>

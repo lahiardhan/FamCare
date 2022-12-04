@@ -45,7 +45,7 @@ function Login() {
           <div className="mb-8 text-center">
             <h1 className="my-3 text-4xl font-bold text-secondary-color">Login</h1>
           </div>
-          <form novalidate="" action="" className="space-y-12 ng-untouched ng-pristine ng-valid">
+          <form noValidate="" action="" className="space-y-12 ng-untouched ng-pristine ng-valid">
             <div className="space-y-4">
               <AuthInput type="email" label="Email" placeholder="your@email.com" value={email} onChange={(event) => setEmail(event.target.value)} />
               <AuthInput type="password" label="Password" placeholder="******" value={password} onChange={(event) => setPassword(event.target.value)} />
