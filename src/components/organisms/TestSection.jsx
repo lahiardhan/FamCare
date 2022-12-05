@@ -28,7 +28,7 @@ function TestSection({ no, title, description, image, score, onSliderChange, nex
             <TestModal showModal={showModal} />
             <p className="text-lg font-semibold opacity-60 color-black"><span className="text-blue-500">{no}</span>/14</p>
             <div className="z-10 text-2xl text-secondary-color cursor-pointer" onClick={toggleModal}>
-              {showModal? <Icon icon="bi:info-circle-fill" /> : <Icon icon="bi:info-circle-fill" />}
+              {showModal? <Icon icon="carbon:close-filled" /> : <Icon icon="bi:info-circle-fill" />}
             </div>
           </div>
           <div className='flex justify-center'>
