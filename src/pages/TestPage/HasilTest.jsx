@@ -24,10 +24,10 @@ function HasilTest() {
             <div className="md:row-start-1 md:col-start-1" data-aos="fade-down">
               <h2 className="text-2xl xs:text-3xl"><span className="underline">Hasil</span> Test</h2>
             </div>
-            <div className="flex justify-center mt-10 md:col-start-2 md:mt-0" data-aos="zoom-in" data-aos-duration="700">
+            <div className="flex justify-center mt-10 md:col-start-2 md:mt-0 md:min-w-[358px] lg:min-w-lg" data-aos="zoom-in" data-aos-duration="700">
               <img className="max-w-lg" src={`/images/hasiltest/${result.statusPic}`} alt={result.status} />
             </div>
-            <div className="flex flex-col justify-end mt-10 md:row-start-1 md:col-start-1 md:mt-0">
+            <div className="flex flex-col justify-end mt-10 md:row-start-1 md:col-start-1 md:mt-0 md:min-h-[385px] lg;min-h-[512px]">
               <div className="h-[60%] flex flex-col justify-between">
                 <h2 className="text-[22px] xs:text-3xl md:text-2xl lg:text-3xl" data-aos="fade-right" data-aos-duration="700">
                   Saat ini anda berada pada<br />tingkat
