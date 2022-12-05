@@ -101,6 +101,7 @@ const HasilTest = Loadable({
 
 function App() {
   const [articles, setArticles] = useState([]);
+  const [message, setMessage] = useState('');
 
   useEffect(() => {
     const loader = document.getElementById('startingLoader');
@@ -110,8 +111,9 @@ function App() {
       }
     };
 
-    getArticleList().then(({ articles }) => {
+    getArticleList().then(({ message, articles }) => {
       setArticles(articles);
+      setMessage(message);
     });
   }, []);
 
@@ -125,7 +127,7 @@ function App() {
           <Route path="/*" element={<Page404 />} />
           <Route path="/" element={<LandingPage />} />
           <Route path="test" element={<TestPage />} />
-          <Route path="article" element={<Article articles={articles} />} />
+          <Route path="article" element={<Article articles={articles} message={message} />} />
           <Route path="forum" element={<DiscussionForum />} />
           <Route path="about" element={<AboutUs />} />
           <Route path="login" element={<Login />} />
