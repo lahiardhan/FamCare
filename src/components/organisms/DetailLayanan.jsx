@@ -10,7 +10,7 @@ function DetailLayanan() {
   }, []);
 
   return (
-    <section className="w-full flex flex-wrap flex-col items-center gap-40 px-4 pt-20">
+    <section className="w-full flex flex-wrap flex-col items-center gap-40 px-4 my-20">
       <DetailLayananItem
         href="/test"
         title="Tes Kecemasan"
