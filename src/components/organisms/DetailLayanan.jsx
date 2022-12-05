@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import DetailLayananItem from '../molecules/DetailLayananItem';
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 function DetailLayanan() {
+  useEffect(() => {
+    AOS.init();
+    AOS.refresh();
+  }, []);
+
   return (
-    <section className="w-full flex flex-wrap flex-col items-center px-4">
+    <section className="w-full flex flex-wrap flex-col items-center gap-40 px-4 my-20">
       <DetailLayananItem
         href="/test"
         title="Tes Kecemasan"

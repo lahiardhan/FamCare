@@ -1,8 +1,8 @@
-import Button from '../../components/Button';
+import Button from '../../components/atoms/Button';
 import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Footer from '../../components/Footer';
+import Footer from '../../components/organisms/Footer';
 AOS.init();
 
 function TestPage() {

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { hasiltestList } from '../../utils/hasiltestList';
-import Footer from '../../components/Footer';
-import Button from '../../components/Button';
+import Footer from '../../components/organisms/Footer';
+import Button from '../../components/atoms/Button';
 import AOS from 'aos';
 import "aos/dist/aos.css";
 
@@ -34,7 +34,7 @@ function HasilTest() {
                   <span className={`text-[${result.colorStatus}]`}> {result.status}</span>
                 </h2>
                 <div data-aos="zoom-in">
-                  <Button text="Kembali ke Beranda" href="/" className="z-10 mt-10" />
+                  <Button text="Kembali ke Beranda" link="/" className="z-10 mt-10" />
                 </div>
               </div>
             </div>
