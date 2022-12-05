@@ -22,7 +22,7 @@ function TestSection({ no, title, description, image, score, onSliderChange, nex
 
   return (
     <section className="relative min-h-screen max-h-screen flex flex-wrap justify-center px-4">
-      <div className="max-w-[850px] h-screen flex flex-col justify-between pt-20 pb-5">
+      <div className="max-w-[850px] h-screen flex flex-col justify-between pt-20 pb-5" data-aos="fade-zoom-in" data-aos-duration="900">
         <div>
           <div className="relative flex flex-row justify-between">
             <TestModal showModal={showModal} />
