@@ -9,7 +9,7 @@ function AuthInput({ type,label, placeholder, value, onChange }) {
         name={type}
         id={type}
         placeholder={placeholder}
-        className="w-full px-3 py-2 border rounded-[100px] border-secondary-color duration-300 focus:shadow-[0_0_0_5px_#C2DBFE] focus:border-secondary-color focus:outline-none"
+        className="w-full px-3 py-2 border rounded-[100px] border-secondary-color duration-300 focus:ring-4 focus:ring-secondary-color focus:ring-opacity-30 focus:outline-none"
         value={value}
         onChange={onChange}
       />
