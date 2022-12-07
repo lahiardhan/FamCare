@@ -400,9 +400,9 @@ function TestPage() {
             </div>
             <div className='flex justify-center container px-5 mt-[40px]'>
               <ul className='list-none text-justify text-lg font-normal w-[400px]'>
-                <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu metode yang digunakan untuk mengukur kondisi seseorang yaitu tingkat kecemasan yang sedang dialami.</li>
+                <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu cara untuk mengukur kondisi seseorang yaitu terkait dengan tingkat kecemasan yang sedang dialami.</li>
                 <br/>
-                <li data-aos="fade-left">Metode HARS sendiri merupakan salah satu metode yang dapat digunakan untuk mengukur tingkat kecemasan seseorang. Skala HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran kecemasan.</li>
+                <li data-aos="fade-left">Sedangkan metode HARS sendiri merupakan salah satu metode yang dapat digunakan dan diimplementasikan pada tes kecemasan tersebut. Skala penilaian dalam metode HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran terhadap tingkat kecemasan.</li>
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
