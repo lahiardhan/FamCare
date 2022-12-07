@@ -56,8 +56,8 @@ function App() {
           <Route path="/" element={<LandingPage />} />
           <Route path="/test" element={<TestPage />} />
           <Route path="/article" element={<Article />} />
-          <Route path="/forum" element={<DiscussionForum />} />
-          <Route path='/content' element={<DiscussionContent/>}/>
+          <Route path="/forum" element={<DiscussionForum />}/>
+          <Route path='/forum/:id' element={<DiscussionContent/>}/>
           <Route path="/about" element={<AboutUs />} />
         </Routes>
       </main>
