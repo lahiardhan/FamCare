@@ -1,17 +1,18 @@
 import AOS from 'aos';
 import "aos/dist/aos.css";
 import Cookies from 'js-cookie';
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { toast, ToastContainer } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
-import Button from '../../components/atoms/Button';
+import React, { useEffect, useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify';
 import AuthInput from '../../components/atoms/AuthInput';
+import Button from '../../components/atoms/Button';
 import { setLogin } from '../../services/auth-api';
+import 'react-toastify/dist/ReactToastify.css';
 
 function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   useEffect(() => {
 		AOS.init();
@@ -34,7 +35,7 @@ function Login() {
         const { token } = response.data;
         const tokenBase64 = btoa(token);
         Cookies.set('token', tokenBase64, { expires: 1 });
-        window.location = "/";
+        navigate('/');
       }
     }
   };
@@ -56,9 +57,6 @@ function Login() {
                 <Link to="/signup" className="underline duration-300 hover:text-secondary-color"> Sign Up</Link>
               </p>
             </div>
-            <ToastContainer
-              position="top-center"
-              theme="colored" />
           </form>
         </div>
       </section>
