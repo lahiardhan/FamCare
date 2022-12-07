@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
 import Loadable from 'react-loadable';
-import Navbar from './components/organisms/Navbar';
+import { Route, Routes } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
 import Loader from './components/atoms/Loader';
+import Navbar from './components/organisms/Navbar';
 import { getArticleList } from './services/news-api';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Page404 = Loadable({
   loader: () => import('./pages/404'),
@@ -149,6 +151,10 @@ function App() {
           <Route path="hasil" element={<HasilTest />} />
         </Routes>
       </main>
+      <ToastContainer
+        position="top-center"
+        theme="colored" 
+      />
     </div>
   );
 }

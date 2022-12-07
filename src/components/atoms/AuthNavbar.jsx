@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, Navigate } from 'react-router-dom';
 import Cookies from 'js-cookie'
 import jwtDecode from 'jwt-decode';
 
@@ -23,8 +23,8 @@ function AuthNavbar() {
 
   const onLogout = () => {
     Cookies.remove('token');
-    window.location = "/";
-    setIsLogin(false)
+    setIsLogin(false);
+    Navigate('/')
   };
 
   if (isLogin) {
