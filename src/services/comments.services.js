@@ -1,6 +1,6 @@
 import {
     db
-} from "../utils/firebase-config";
+} from "../config/firebase-config";
 
 import {
     collection,

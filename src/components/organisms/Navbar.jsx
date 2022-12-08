@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import AuthNavbar from '../atoms/AuthNavbar';
 
 function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -22,7 +23,7 @@ function Navbar() {
           </button>
         </div>
         <div className={`lg:flex flex-grow items-center${navbarOpen ? ' flex ' : ' hidden'}`}>
-          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto text-sm font-semibold ">
+          <ul className="w-full flex flex-col gap-2 lg:flex-row list-none lg:ml-auto text-sm font-semibold ">
             <li className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <Link to="/" className="flex items-center px-3 py-2 hover-link duration-300">Home</Link>
             </li>
@@ -38,6 +39,7 @@ function Navbar() {
             <li>
               <Link to="/about" className="flex items-center px-3 py-2 hover-link duration-300">About Us</Link>
             </li>
+            <AuthNavbar />
           </ul>
         </div>
       </nav>
