@@ -27,6 +27,10 @@ const DiscussionForum = Loadable({
   loader: () => import('./pages/DiscussionForum'),
   loading: Loader,
 });
+const DiscussionContent = Loadable({
+  loader: () => import('./pages/DiscussionForum/DiscussionList/Discussion'),
+  loading: Loader,
+})
 const AboutUs = Loadable({
   loader: () => import('./pages/AboutUs'),
   loading: Loader,
@@ -128,9 +132,10 @@ function App() {
         <Routes>
           <Route path="/*" element={<Page404 />} />
           <Route path="/" element={<LandingPage />} />
+          <Route path="/forum" element={<DiscussionForum />}/>
+          <Route path='/forum/:id' element={<DiscussionContent/>}/>
           <Route path="test" element={<TestPage />} />
           <Route path="article" element={<Article articles={articles} message={message} />} />
-          <Route path="forum" element={<DiscussionForum />} />
           <Route path="about" element={<AboutUs />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<SignUp />} />

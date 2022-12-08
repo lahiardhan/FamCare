@@ -11,6 +11,7 @@
     "axios": "^1.2.0",
     "classnames": "^2.3.2",
     "dotenv": "^16.0.3",
+    "firebase": "^9.14.0",
     "flowbite": "^1.5.4",
     "flowbite-react": "^0.3.4",
     "js-cookie": "^3.0.1",
