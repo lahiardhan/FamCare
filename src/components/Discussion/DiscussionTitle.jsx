@@ -13,17 +13,24 @@ function DiscussionTitle() {
             getDiscussions()
         }
     }, [])
-    console.log(discussion);
-
+    
     const getDiscussions = async () => {
-    const data = await DiscussionDataService.getDiscussion();
-    setDiscussion(data.map((doc) => ({...doc.data(), id: doc.id})))
+        const data = await DiscussionDataService.getAllDiscussions();
+        const dataMap = data.docs.map((doc) => ({
+            ...doc.data(),
+            id: doc.id
+        }));
+        dataMap.find((data) => {
+            if (data.id == id) {
+                return setDiscussion(data)
+            }
+        });
     }
+    
+    console.log(discussion);
     return (
         <>
-            <h1 className="text-2xl font-medium">Ini Judul - <span>Tanggalnya</span></h1>
-            <h1>params: {id}</h1>
-            <pre>{ JSON.stringify(discussion, [], 2) }</pre>
+            <h1 className="text-2xl font-medium">{discussion.title}</h1>
         </>
     )
 }

@@ -1,12 +1,13 @@
 import {React, useState} from "react";
 import { Link, useNavigate } from "react-router-dom";
 import DiscussionDataService from "../../services/discussion.services";
+import showFormattedDate from "../../utils/formattedDate";
 
 const ModalDiscussion = () => {
     const [showModal, setShowModal] = useState(false);
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
-    const [date, setDate] = useState("");
+    const [date, setDate] = useState(showFormattedDate);
     const [message, setMessage] = useState({error: false, msg: ""});
 
     const navigate = useNavigate();
@@ -20,6 +21,7 @@ const ModalDiscussion = () => {
       const newDiscussion = {
         title,
         content,
+        date,
       }
       console.log(newDiscussion);
       try {
@@ -28,7 +30,7 @@ const ModalDiscussion = () => {
         setMessage({error: true, msg: error.message})
       }
       setTitle("");
-        setContent("")
+      setContent("")
         window.location.reload()
     }
   return (
