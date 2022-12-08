@@ -51,3 +51,26 @@ body {
 main {
   min-height: 100vh;
 }
+
+.hover-link {
+  transition: 0.3s;
+  position: relative;
+}
+
+.hover-link::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--white);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.hover-link:hover::after {
+  transform-origin: left;
+  transform: scaleX(1);
+}
