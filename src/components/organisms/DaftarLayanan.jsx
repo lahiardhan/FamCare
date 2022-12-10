@@ -16,19 +16,19 @@ function DaftarLayanan() {
         <Card
           icon="mdi:book-edit-outline" href="/test"
           title="Tes Kecemasan" bgColor="bg-gradient-to-b from-blue-500 to-blue-900"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore eteiusmo."
+          description="Kecemasan dapat diukur dengan pengukuran tingkat kecemasan menurut alat ukur kecemasan yang disebut HARS (Hamilton Anxiety Rating Scale)"
           aosDelay="300"
         />
         <Card
           icon="zondicons:news-paper" href="/article"
           title="Artikel" bgColor="bg-gradient-to-b from-secondary-color to-[#0f8072]"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore eteiusmo."
+          description="Terdapat berbagai macam artikel mengenai kesehatan mental yang bisa menjadi bahan bacaan untuk mendapatkan wawasan tentang kesehatan mental"
           aosDelay="500"
         />
         <Card
           icon="fluent:chat-multiple-24-regular" href="/forum"
           title="Forum Diskusi" bgColor="bg-gradient-to-b from-purple-500 to-purple-900"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore eteiusmo."
+          description="forum diskusi disediakan sebagai tampat untuk memberikan pendapat atau mencari informasi yang lebih akurat dan saling berbagi antar pengguna forum."
           aosDelay="700"
         />
       </div>
