@@ -1,8 +1,8 @@
-import Button from '../../components/Button';
+import Button from '../../components/atoms/Button';
 import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import Footer from '../../components/Footer';
+import Footer from '../../components/organisms/Footer';
 AOS.init();
 
 function TestPage() {
@@ -28,7 +28,7 @@ function TestPage() {
               <p className='text-lg font-medium' data-aos="zoom-in-up" data-aos-delay="400"><span className='underline decoration-auto'>Yuk Check Kondisimu</span>!</p>
               <h2 className='text-4xl font-extrabold mt-[10px]' data-aos="zoom-in-up" data-aos-delay="500">TEST KECEMASAN</h2>
               <div className='flex justify-center'>
-                <p className='text-base font-normal w-[450px] mt-[15px]' data-aos="zoom-in-up" data-aos-delay="600">FamCare menghadirkan layanan berupa test agar dapat membantu mengukur dan juga mengetahui kondisi terkini dari diri anda yang berkaitan dengan tingkat kecemasan yang sedang dialami.</p>
+                <p className='text-base font-normal w-[450px] mt-[15px]' data-aos="zoom-in-up" data-aos-delay="600">FamCare saat ini menghadirkan sebuah layanan berupa test, dimana test ini sendiri bertujuan agar dapat  membantu mengukur dan juga mengetahui kondisi terkini dari diri anda sendiri yang tentunya berkaitan dengan tingkat kecemasan atau anxiety yang sedang anda alami.</p>
               </div>
             </div>
             <div className='flex flex-row justify-center mt-[50px]' data-aos="fade-down" data-aos-delay="1000">
@@ -49,7 +49,7 @@ function TestPage() {
             </div>
             <h3 className='text-center text-2xl font-semibold mt-[20px]' data-aos="fade-left">Klik Mulai Test</h3>
             <div className='flex justify-center'>
-              <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Anda dapat melakukan test ini setelah menekan tombol mulai test.</p>
+              <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Untuk dapat mengikuti test ini, silahkan anda menekan tombol mulai test.</p>
             </div>
           </div>
           <div className='flex flex-col mt-[50px]'>
@@ -58,7 +58,7 @@ function TestPage() {
             </div>
             <h3 className='text-center text-2xl font-semibold mt-[20px]' data-aos="fade-left">Kerjakan Test</h3>
             <div className='flex justify-center'>
-               <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Memulai mengerjakan test dengan beberapa pertanyaan yang sudah disediakan.</p>
+               <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Selanjutnya anda dapat mulai mengerjakan test dengan menjawab pertanyaan-pertanyaan yang telah diberikan.</p>
             </div>
           </div>
           <div className='flex flex-col mt-[50px]'>
@@ -67,7 +67,7 @@ function TestPage() {
             </div>
             <h3 className='text-center text-2xl font-semibold mt-[20px]' data-aos="fade-left">Dapatkan Hasil Test</h3>
             <div className='flex justify-center'>
-              <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Dapatkan hasil akhir berupa kondisi tingkat kecemasan anda dan juga dapatkan tips serta trick dalam menangani kecemasan anda.</p>
+              <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Setelah selesai mengerjakan dapatkan hasil test berupa kondisi dari tingkat kecemasan diri anda saat ini. Kemudian dapatkan juga tips serta trick dalam menangani kecemasan anda tersebut.</p>
             </div>
            </div>
         </div>
@@ -84,9 +84,10 @@ function TestPage() {
             </div>
             <div className='flex justify-center container px-5 mt-[40px] ml-[10px]'>
               <ol className='list-decimal text-justify text-base font-normal w-[340px]'>
-                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li data-aos="fade-left">Persiapkan perangkat yang akan anda gunakan dalam mengikuti test ini, pastikan sudah terhubung dan juga memiliki koneksi internet stabil.</li>
+                <li data-aos="fade-left">Kemudian dalam mengerjakan test terkait dengan tingkat skala penilaian, dapat anda lihat dengan menekan tombol informasi pada bagian kanan atas.</li>
+                <li data-aos="fade-left">Dalam test ini sendiri tidak memiliki jawaban benar maupun salah, sehingga isilah jawaban yakni dengan benar-benar sesuai kondisi anda saat ini.</li>
+                <li data-aos="fade-left">Selanjutnya juga saat mengerjakan test bacalah dengan seksama setiap pertanyaan yang diberikan, agar hasil yang diberikan juga dapat sesuai dengan kondisi anda saat ini.</li>
               </ol>
             </div>
           </div>
@@ -104,9 +105,9 @@ function TestPage() {
             </div>
             <div className='flex justify-center container px-5 mt-[40px]'>
               <ul className='list-none text-justify text-base font-normal w-[340px]'>
-                <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu metode yang digunakan untuk mengukur kondisi seseorang yaitu tingkat kecemasan yang sedang dialami.</li>
+                <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu cara untuk mengukur kondisi seseorang yaitu terkait dengan tingkat kecemasan yang sedang dialami.</li>
                 <br/>
-                <li data-aos="fade-left">Metode HARS sendiri merupakan salah satu metode yang dapat digunakan untuk mengukur tingkat kecemasan seseorang. Skala HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran kecemasan.</li>
+                <li data-aos="fade-left">Sedangkan metode HARS sendiri merupakan salah satu metode yang dapat digunakan dan diimplementasikan pada tes kecemasan tersebut. Skala penilaian dalam metode HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran terhadap tingkat kecemasan.</li>
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
@@ -129,7 +130,7 @@ function TestPage() {
               <p className='text-lg font-medium' data-aos="zoom-in-up" data-aos-delay="400"><span className='underline decoration-auto'>Yuk Check Kondisimu</span>!</p>
               <h2 className='text-4xl font-extrabold mt-[10px]' data-aos="zoom-in-up" data-aos-delay="500">TEST KECEMASAN</h2>
               <div className='flex justify-center'>
-                <p className='text-base font-normal w-[450px] mt-[15px]' data-aos="zoom-in-up" data-aos-delay="600">FamCare menghadirkan layanan berupa test agar dapat membantu mengukur dan juga mengetahui kondisi terkini dari diri anda yang berkaitan dengan tingkat kecemasan yang sedang dialami.</p>
+                <p className='text-base font-normal w-[450px] mt-[15px]' data-aos="zoom-in-up" data-aos-delay="600">FamCare saat ini menghadirkan sebuah layanan berupa test, dimana test ini sendiri bertujuan agar dapat  membantu mengukur dan juga mengetahui kondisi terkini dari diri anda sendiri yang tentunya berkaitan dengan tingkat kecemasan atau anxiety yang sedang anda alami.</p>
               </div>
             </div>
             <div className=' flex-initial justify-center mt-[50px]' data-aos="fade-down" data-aos-delay="1000">
@@ -150,7 +151,7 @@ function TestPage() {
             </div>
             <h3 className='text-center text-2xl font-semibold mt-[20px]' data-aos="fade-left">Klik Mulai Test</h3>
             <div className='flex justify-center'>
-              <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Anda dapat melakukan test ini setelah menekan tombol mulai test.</p>
+              <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Untuk dapat mengikuti test ini, silahkan anda menekan tombol mulai test.</p>
             </div>
           </div>
           <div className='flex flex-col mt-[50px]'>
@@ -159,7 +160,7 @@ function TestPage() {
             </div>
             <h3 className='text-center text-2xl font-semibold mt-[20px]' data-aos="fade-left">Kerjakan Test</h3>
             <div className='flex justify-center'>
-               <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Memulai mengerjakan test dengan beberapa pertanyaan yang sudah disediakan.</p>
+               <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Selanjutnya anda dapat mulai mengerjakan test dengan menjawab pertanyaan-pertanyaan yang telah diberikan.</p>
             </div>
           </div>
           <div className='flex flex-col mt-[50px]'>
@@ -168,7 +169,7 @@ function TestPage() {
             </div>
             <h3 className='text-center text-2xl font-semibold mt-[20px]' data-aos="fade-left">Dapatkan Hasil Test</h3>
             <div className='flex justify-center'>
-              <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Dapatkan hasil akhir berupa kondisi tingkat kecemasan anda dan juga dapatkan tips serta trick dalam menangani kecemasan anda.</p>
+              <p className='text-center text-base font-normal w-[354px] mt-[10px]' data-aos="fade-left">Setelah selesai mengerjakan dapatkan hasil test berupa kondisi dari tingkat kecemasan diri anda saat ini. Kemudian dapatkan juga tips serta trick dalam menangani kecemasan anda tersebut.</p>
             </div>
            </div>
         </div>
@@ -185,9 +186,10 @@ function TestPage() {
             </div>
             <div className='flex justify-center container px-5 mt-[40px] ml-[10px]'>
               <ol className='list-decimal text-justify text-base font-normal w-[340px]'>
-                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li data-aos="fade-left">Persiapkan perangkat yang akan anda gunakan dalam mengikuti test ini, pastikan sudah terhubung dan juga memiliki koneksi internet stabil.</li>
+                <li data-aos="fade-left">Kemudian dalam mengerjakan test terkait dengan tingkat skala penilaian, dapat anda lihat dengan menekan tombol informasi pada bagian kanan atas.</li>
+                <li data-aos="fade-left">Dalam test ini sendiri tidak memiliki jawaban benar maupun salah, sehingga isilah jawaban yakni dengan benar-benar sesuai kondisi anda saat ini.</li>
+                <li data-aos="fade-left">Selanjutnya juga saat mengerjakan test bacalah dengan seksama setiap pertanyaan yang diberikan, agar hasil yang diberikan juga dapat sesuai dengan kondisi anda saat ini.</li>
               </ol>
             </div>
           </div>
@@ -205,9 +207,9 @@ function TestPage() {
             </div>
             <div className='flex justify-center container px-5 mt-[40px]'>
               <ul className='list-none text-justify text-base font-normal w-[340px]'>
-                <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu metode yang digunakan untuk mengukur kondisi seseorang yaitu tingkat kecemasan yang sedang dialami.</li>
+                <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu cara untuk mengukur kondisi seseorang yaitu terkait dengan tingkat kecemasan yang sedang dialami.</li>
                 <br/>
-                <li data-aos="fade-left">Metode HARS sendiri merupakan salah satu metode yang dapat digunakan untuk mengukur tingkat kecemasan seseorang. Skala HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran kecemasan.</li>
+                <li data-aos="fade-left">Sedangkan metode HARS sendiri merupakan salah satu metode yang dapat digunakan dan diimplementasikan pada tes kecemasan tersebut. Skala penilaian dalam metode HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran terhadap tingkat kecemasan.</li>
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
@@ -231,7 +233,7 @@ function TestPage() {
               <p className='text-xl font-medium' data-aos="zoom-in-up" data-aos-delay="400"><span className='underline decoration-auto'>Yuk Check Kondisimu</span>! 650</p>
               <h2 className='text-5xl font-extrabold mt-[10px]' data-aos="zoom-in-up" data-aos-delay="500">TEST KECEMASAN</h2>
               <div className='flex justify-center'>
-                <p className='text-lg font-normal w-[520px] mt-[15px]' data-aos="zoom-in-up" data-aos-delay="600">FamCare menghadirkan layanan berupa test agar dapat membantu mengukur dan juga mengetahui kondisi terkini dari diri anda yang berkaitan dengan tingkat kecemasan yang sedang dialami.</p>
+                <p className='text-lg font-normal w-[520px] mt-[15px]' data-aos="zoom-in-up" data-aos-delay="600">FamCare saat ini menghadirkan sebuah layanan berupa test, dimana test ini sendiri bertujuan agar dapat  membantu mengukur dan juga mengetahui kondisi terkini dari diri anda sendiri yang tentunya berkaitan dengan tingkat kecemasan atau anxiety yang sedang anda alami.</p>
               </div>
             </div>
             <div className='flex-initial justify-center ml-[25px] mt-[50px] w-[600px]' data-aos="fade-down" data-aos-delay="1000">
@@ -250,7 +252,7 @@ function TestPage() {
             </div>
             <h3 className='text-center text-3xl font-semibold mt-[20px]' data-aos="fade-left">Klik Mulai Test</h3>
             <div className='flex justify-center'>
-              <p className='text-center text-lg font-normal w-[354px] mt-[10px]' data-aos="fade-left">Anda dapat melakukan test ini setelah menekan tombol mulai test.</p>
+              <p className='text-center text-lg font-normal w-[354px] mt-[10px]' data-aos="fade-left">Untuk dapat mengikuti test ini, silahkan anda menekan tombol mulai test.</p>
             </div>
           </div>
           <div className='flex flex-col mt-[50px]'>
@@ -259,7 +261,7 @@ function TestPage() {
             </div>
             <h3 className='text-center text-3xl font-semibold mt-[20px]' data-aos="fade-left">Kerjakan Test</h3>
             <div className='flex justify-center'>
-               <p className='text-center text-lg font-normal w-[354px] mt-[10px]' data-aos="fade-left">Memulai mengerjakan test dengan beberapa pertanyaan yang sudah disediakan.</p>
+               <p className='text-center text-lg font-normal w-[354px] mt-[10px]' data-aos="fade-left">Selanjutnya anda dapat mulai mengerjakan test dengan menjawab pertanyaan-pertanyaan yang telah diberikan.</p>
             </div>
           </div>
           <div className='flex flex-col mt-[50px]'>
@@ -268,7 +270,7 @@ function TestPage() {
             </div>
             <h3 className='text-center text-3xl font-semibold mt-[20px]' data-aos="fade-left">Dapatkan Hasil Test</h3>
             <div className='flex justify-center'>
-              <p className='text-center text-lg font-normal w-[354px] mt-[10px]' data-aos="fade-left">Dapatkan hasil akhir berupa kondisi tingkat kecemasan anda dan juga dapatkan tips serta trick dalam menangani kecemasan anda.</p>
+              <p className='text-center text-lg font-normal w-[354px] mt-[10px]' data-aos="fade-left">Setelah selesai mengerjakan dapatkan hasil test berupa kondisi dari tingkat kecemasan diri anda saat ini. Kemudian dapatkan juga tips serta trick dalam menangani kecemasan anda tersebut.</p>
             </div>
            </div>
         </div>
@@ -285,9 +287,10 @@ function TestPage() {
             </div>
             <div className='flex justify-center container px-5 mt-[40px] ml-[10px]'>
               <ol className='list-decimal text-justify text-lg font-normal w-[400px]'>
-                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li data-aos="fade-left">Persiapkan perangkat yang akan anda gunakan dalam mengikuti test ini, pastikan sudah terhubung dan juga memiliki koneksi internet stabil.</li>
+                <li data-aos="fade-left">Kemudian dalam mengerjakan test terkait dengan tingkat skala penilaian, dapat anda lihat dengan menekan tombol informasi pada bagian kanan atas.</li>
+                <li data-aos="fade-left">Dalam test ini sendiri tidak memiliki jawaban benar maupun salah, sehingga isilah jawaban yakni dengan benar-benar sesuai kondisi anda saat ini.</li>
+                <li data-aos="fade-left">Selanjutnya juga saat mengerjakan test bacalah dengan seksama setiap pertanyaan yang diberikan, agar hasil yang diberikan juga dapat sesuai dengan kondisi anda saat ini.</li>
               </ol>
             </div>
           </div>
@@ -305,9 +308,9 @@ function TestPage() {
             </div>
             <div className='flex justify-center container px-5 mt-[40px]'>
               <ul className='list-none text-justify text-lg font-normal w-[400px]'>
-                <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu metode yang digunakan untuk mengukur kondisi seseorang yaitu tingkat kecemasan yang sedang dialami.</li>
+                <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu cara untuk mengukur kondisi seseorang yaitu terkait dengan tingkat kecemasan yang sedang dialami.</li>
                 <br/>
-                <li data-aos="fade-left">Metode HARS sendiri merupakan salah satu metode yang dapat digunakan untuk mengukur tingkat kecemasan seseorang. Skala HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran kecemasan.</li>
+                <li data-aos="fade-left">Sedangkan metode HARS sendiri merupakan salah satu metode yang dapat digunakan dan diimplementasikan pada tes kecemasan tersebut. Skala penilaian dalam metode HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran terhadap tingkat kecemasan.</li>
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
@@ -331,7 +334,7 @@ function TestPage() {
               <p className='text-2xl font-medium' data-aos="zoom-in-up" data-aos-delay="400"><span className='underline decoration-auto'>Yuk Check Kondisimu</span>!</p>
               <h2 className='text-6xl font-extrabold mt-[10px]' data-aos="zoom-in-up" data-aos-delay="500">TEST KECEMASAN</h2>
               <div className='flex justify-center'>
-                <p className='text-xl font-normal w-[700px] mt-[15px]' data-aos="zoom-in-up" data-aos-delay="600">FamCare menghadirkan layanan berupa test agar dapat membantu mengukur dan juga mengetahui kondisi terkini dari diri anda yang berkaitan dengan tingkat kecemasan yang sedang dialami.</p>
+                <p className='text-xl font-normal w-[700px] mt-[15px]' data-aos="zoom-in-up" data-aos-delay="600">FamCare saat ini menghadirkan sebuah layanan berupa test, dimana test ini sendiri bertujuan agar dapat  membantu mengukur dan juga mengetahui kondisi terkini dari diri anda sendiri yang tentunya berkaitan dengan tingkat kecemasan atau anxiety yang sedang anda alami.</p>
               </div>
             </div>
             <div className='flex-initial justify-center ml-[80px] mt-[30px] w-[600px]' data-aos="fade-down" data-aos-delay="1000">
@@ -350,7 +353,7 @@ function TestPage() {
             </div>
             <h3 className='text-center text-3xl font-semibold mt-[20px]' data-aos="fade-left">Klik Mulai Test</h3>
             <div className='flex justify-center'>
-              <p className='text-center text-lg font-normal w-[354px] mt-[10px]' data-aos="fade-left">Anda dapat melakukan test ini setelah menekan tombol mulai test.</p>
+              <p className='text-center text-lg font-normal w-[354px] mt-[10px]' data-aos="fade-left">Untuk dapat mengikuti test ini, silahkan anda menekan tombol mulai test.</p>
             </div>
           </div>
           <div className='flex flex-col mt-[50px]'>
@@ -359,7 +362,7 @@ function TestPage() {
             </div>
             <h3 className='text-center text-3xl font-semibold mt-[20px]' data-aos="fade-left">Kerjakan Test</h3>
             <div className='flex justify-center'>
-               <p className='text-center text-lg font-normal w-[354px] mt-[10px]' data-aos="fade-left">Memulai mengerjakan test dengan beberapa pertanyaan yang sudah disediakan.</p>
+               <p className='text-center text-lg font-normal w-[354px] mt-[10px]' data-aos="fade-left">Selanjutnya anda dapat mulai mengerjakan test dengan menjawab pertanyaan-pertanyaan yang telah diberikan.</p>
             </div>
           </div>
           <div className='flex flex-col mt-[50px]'>
@@ -368,7 +371,7 @@ function TestPage() {
             </div>
             <h3 className='text-center text-3xl font-semibold mt-[20px]' data-aos="fade-left">Dapatkan Hasil Test</h3>
             <div className='flex justify-center'>
-              <p className='text-center text-lg font-normal w-[354px] mt-[10px]' data-aos="fade-left">Dapatkan hasil akhir berupa kondisi tingkat kecemasan anda dan juga dapatkan tips serta trick dalam menangani kecemasan anda.</p>
+              <p className='text-center text-lg font-normal w-[354px] mt-[10px]' data-aos="fade-left">Setelah selesai mengerjakan dapatkan hasil test berupa kondisi dari tingkat kecemasan diri anda saat ini. Kemudian dapatkan juga tips serta trick dalam menangani kecemasan anda tersebut.</p>
             </div>
            </div>
         </div>        
@@ -385,9 +388,10 @@ function TestPage() {
             </div>
             <div className='flex justify-center container px-5 mt-[40px] ml-[10px]'>
               <ol className='list-decimal text-justify text-lg font-normal w-[400px]'>
-                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li data-aos="fade-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li data-aos="fade-left">Persiapkan perangkat yang akan anda gunakan dalam mengikuti test ini, pastikan sudah terhubung dan juga memiliki koneksi internet stabil.</li>
+                <li data-aos="fade-left">Kemudian dalam mengerjakan test terkait dengan tingkat skala penilaian, dapat anda lihat dengan menekan tombol informasi pada bagian kanan atas.</li>
+                <li data-aos="fade-left">Dalam test ini sendiri tidak memiliki jawaban benar maupun salah, sehingga isilah jawaban yakni dengan benar-benar sesuai kondisi anda saat ini.</li>
+                <li data-aos="fade-left">Selanjutnya juga saat mengerjakan test bacalah dengan seksama setiap pertanyaan yang diberikan, agar hasil yang diberikan juga dapat sesuai dengan kondisi anda saat ini.</li>
               </ol>
             </div>
           </div>
@@ -405,9 +409,9 @@ function TestPage() {
             </div>
             <div className='flex justify-center container px-5 mt-[40px]'>
               <ul className='list-none text-justify text-lg font-normal w-[400px]'>
-                <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu metode yang digunakan untuk mengukur kondisi seseorang yaitu tingkat kecemasan yang sedang dialami.</li>
+                <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu cara untuk mengukur kondisi seseorang yaitu terkait dengan tingkat kecemasan yang sedang dialami.</li>
                 <br/>
-                <li data-aos="fade-left">Metode HARS sendiri merupakan salah satu metode yang dapat digunakan untuk mengukur tingkat kecemasan seseorang. Skala HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran kecemasan.</li>
+                <li data-aos="fade-left">Sedangkan metode HARS sendiri merupakan salah satu metode yang dapat digunakan dan diimplementasikan pada tes kecemasan tersebut. Skala penilaian dalam metode HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran terhadap tingkat kecemasan.</li>
               </ul>
             </div>
             <div className=' flex justify-center mt-[40px]' data-aos="fade-down">
@@ -429,7 +433,7 @@ function TestPage() {
             <div className='flex flex-col'>
               <p className='text-xl font-medium' data-aos="fade-right" data-aos-delay="400"><span className='underline decoration-auto'>Yuk Check Kondisimu</span>!</p>
               <h2 className='text-4xl font-bold mt-[20px]' data-aos="fade-right" data-aos-delay="500">TEST KECEMASAN</h2>
-              <p className='text-[15px] font-normal px-[5] w-[550px] h-[100px] mt-[20px]' data-aos="fade-right" data-aos-delay="600">FamCare menghadirkan layanan berupa test agar dapat membantu mengukur dan juga mengetahui kondisi terkini dari diri anda yang berkaitan dengan tingkat kecemasan yang sedang dialami.</p>
+              <p className='text-[15px] font-normal px-[5] w-[550px] h-[100px] mt-[20px]' data-aos="fade-right" data-aos-delay="600">FamCare saat ini menghadirkan sebuah layanan berupa test, dimana test ini sendiri bertujuan agar dapat  membantu mengukur dan juga mengetahui kondisi terkini dari diri anda sendiri yang tentunya berkaitan dengan tingkat kecemasan atau anxiety yang sedang anda alami.</p>
             </div>
             <div className='flex-initial w-[600px]' data-aos="fade-down" data-aos-delay="1000">
               <Button href='#Alur-Test' text="ALUR TEST"/>
@@ -447,7 +451,7 @@ function TestPage() {
                 <img src='images/kliktombol-images.svg' className='w-[90px]'/>
               </div>
               <h3 className='text-center text-xl font-bold mt-[10px]' data-aos="fade-up" data-aos-delay="100">Klik Mulai Test</h3>
-              <p className='text-center font-medium w-[300px] mt-[5px]' data-aos="fade-up" data-aos-delay="400">Anda dapat melakukan test ini dengan menekan tombol mulai test.</p>
+              <p className='text-center font-medium w-[300px] mt-[5px]' data-aos="fade-up" data-aos-delay="400">Untuk dapat mengikuti test ini, silahkan anda menekan tombol mulai test.</p>
             </div>
 
             <div className='flex flex-col mx-[15px]'>
@@ -455,7 +459,7 @@ function TestPage() {
                 <img src='images/kerjakantest-image.svg' className='w-[90px]'/>
               </div>
               <h3 className='text-center text-xl font-bold mt-[10px]' data-aos="fade-up" data-aos-delay="200">Kerjakan Test</h3>
-              <p className='text-center font-medium w-[300px] mt-[5px]' data-aos="fade-up" data-aos-delay="500">Memulai mengerjakan test dengan beberapa pertanyaan yang sudah disediakan.</p>
+              <p className='text-center font-medium w-[300px] mt-[5px]' data-aos="fade-up" data-aos-delay="500">Selanjutnya anda dapat mulai mengerjakan test dengan menjawab pertanyaan-pertanyaan yang telah diberikan.</p>
             </div>
             
             <div className='flex flex-col mx-[15px]'>
@@ -463,7 +467,7 @@ function TestPage() {
                 <img src='images/hasiltest-image.svg' className='w-[90px]'/>
               </div>
               <h3 className='text-center text-xl font-bold mt-[10px]' data-aos="fade-up" data-aos-delay="300">Dapatkan Hasil Test</h3>
-              <p className='text-center font-medium w-[300px] mt-[5px]' data-aos="fade-up" data-aos-delay="600">Dapatkan hasil akhir berupa kondisi tingkat kecemasan anda dan juga dapatkan tips serta trick dalam menangani kecemasan anda.</p>
+              <p className='text-center font-medium w-[300px] mt-[5px]' data-aos="fade-up" data-aos-delay="600">Setelah selesai mengerjakan dapatkan hasil test berupa kondisi dari tingkat kecemasan diri anda saat ini. Kemudian dapatkan juga tips serta trick dalam menangani kecemasan anda tersebut.</p>
             </div>
           </div>
         </div> 
@@ -477,9 +481,10 @@ function TestPage() {
               </div>
               <div className='flex mt-[20px] ml-[20px]'>
                 <ol className='list-decimal text-justify text-base font-normal w-[340px]'>
-                  <li data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li data-aos="fade-left">Persiapkan perangkat yang akan anda gunakan dalam mengikuti test ini, pastikan sudah terhubung dan juga memiliki koneksi internet stabil.</li>
+                  <li data-aos="fade-left">Kemudian dalam mengerjakan test terkait dengan tingkat skala penilaian, dapat anda lihat dengan menekan tombol informasi pada bagian kanan atas.</li>
+                  <li data-aos="fade-left">Dalam test ini sendiri tidak memiliki jawaban benar maupun salah, sehingga isilah jawaban yakni dengan benar-benar sesuai kondisi anda saat ini.</li>
+                  <li data-aos="fade-left">Selanjutnya juga saat mengerjakan test bacalah dengan seksama setiap pertanyaan yang diberikan, agar hasil yang diberikan juga dapat sesuai dengan kondisi anda saat ini.</li>
                 </ol>
               </div>
             </div>
@@ -501,9 +506,9 @@ function TestPage() {
               </div>
               <div className='flex justify-center mt-[20px]'>
                 <ul className='list-none text-justify text-base font-normal w-[480px]'>
-                  <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu metode yang digunakan untuk mengukur kondisi seseorang yaitu tingkat kecemasan yang sedang dialami.</li>
+                  <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu cara untuk mengukur kondisi seseorang yaitu terkait dengan tingkat kecemasan yang sedang dialami.</li>
                   <br/>
-                  <li data-aos="fade-left">Metode HARS sendiri merupakan salah satu metode yang dapat digunakan untuk mengukur tingkat kecemasan seseorang. Skala HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran kecemasan.</li>
+                  <li data-aos="fade-left">Sedangkan metode HARS sendiri merupakan salah satu metode yang dapat digunakan dan diimplementasikan pada tes kecemasan tersebut. Skala penilaian dalam metode HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran terhadap tingkat kecemasan.</li>
                 </ul>
               </div>
               <div className='flex flex-row mt-[20px]' data-aos="fade-down">
@@ -526,7 +531,7 @@ function TestPage() {
             <div className='flex flex-col'>
               <p className='text-2xl font-medium' data-aos="fade-right"  data-aos-delay="400"><span className='underline decoration-auto'>Yuk Check Kondisimu</span>!</p>
               <h2 className='text-5xl font-bold mt-[20px]' data-aos="fade-right"  data-aos-delay="500">TEST KECEMASAN</h2>
-              <p className='text-[18px] font-normal px-[5] w-[550px] h-[100px] mt-[20px]' data-aos="fade-right"  data-aos-delay="600" >FamCare menghadirkan layanan berupa test agar dapat membantu mengukur dan juga mengetahui kondisi terkini dari diri anda yang berkaitan dengan tingkat kecemasan yang sedang dialami.</p>
+              <p className='text-[18px] font-normal px-[5] w-[550px] h-[100px] mt-[20px]' data-aos="fade-right"  data-aos-delay="600" >FamCare saat ini menghadirkan sebuah layanan berupa test, dimana test ini sendiri bertujuan agar dapat  membantu mengukur dan juga mengetahui kondisi terkini dari diri anda sendiri yang tentunya berkaitan dengan tingkat kecemasan atau anxiety yang sedang anda alami.</p>
             </div>
             <div className='flex-initial mt-[35px] w-[600px]'>
               <div data-aos="fade-down" data-aos-delay="1000">
@@ -546,7 +551,7 @@ function TestPage() {
                 <img src='images/kliktombol-images.svg' className='w-[125px]'/>
               </div>
               <h3 className='text-center text-3xl font-bold mt-[20px]' data-aos="fade-up" data-aos-delay="400">Klik Mulai Test</h3>
-              <p className='text-center text-lg font-normal w-[420px] mt-[15px]' data-aos="fade-up" data-aos-delay="700">Anda dapat melakukan test ini dengan menekan tombol mulai test.</p>
+              <p className='text-center text-lg font-normal w-[420px] mt-[15px]' data-aos="fade-up" data-aos-delay="700">Untuk dapat mengikuti test ini, silahkan anda menekan tombol mulai test.</p>
             </div>
 
             <div className='flex flex-col mx-[15px]'>
@@ -554,7 +559,7 @@ function TestPage() {
                 <img src='images/kerjakantest-image.svg' className='w-[125px]'/>
               </div>
               <h3 className='text-center text-3xl font-bold mt-[20px]' data-aos="fade-up" data-aos-delay="500">Kerjakan Test</h3>
-              <p className='text-center text-lg font-normal w-[420px] mt-[15px]' data-aos="fade-up" data-aos-delay="800">Memulai mengerjakan test dengan beberapa pertanyaan yang sudah disediakan.</p>
+              <p className='text-center text-lg font-normal w-[420px] mt-[15px]' data-aos="fade-up" data-aos-delay="800">Selanjutnya anda dapat mulai mengerjakan test dengan menjawab pertanyaan-pertanyaan yang telah diberikan.</p>
             </div>
             
             <div className='flex flex-col mx-[15px]'>
@@ -562,7 +567,7 @@ function TestPage() {
                 <img src='images/hasiltest-image.svg' className='w-[125px]'/>
               </div>
               <h3 className='text-center text-3xl font-bold mt-[20px]' data-aos="fade-up" data-aos-delay="600">Dapatkan Hasil Test</h3>
-              <p className='text-center text-lg font-normal w-[420px] mt-[15px]' data-aos="fade-up" data-aos-delay="900">Dapatkan hasil akhir berupa kondisi tingkat kecemasan anda dan juga dapatkan tips serta trick dalam menangani kecemasan anda.</p>
+              <p className='text-center text-lg font-normal w-[420px] mt-[15px]' data-aos="fade-up" data-aos-delay="900">Setelah selesai mengerjakan dapatkan hasil test berupa kondisi dari tingkat kecemasan diri anda saat ini. Kemudian dapatkan juga tips serta trick dalam menangani kecemasan anda tersebut.</p>
             </div>
           </div>
         </div> 
@@ -576,9 +581,10 @@ function TestPage() {
               </div>
               <div className='flex mt-[20px] ml-[30px]'>
                 <ol className='list-decimal text-justify text-lg font-normal w-[420px]'>
-                  <li data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li data-aos="fade-right">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li data-aos="fade-left">Persiapkan perangkat yang akan anda gunakan dalam mengikuti test ini, pastikan sudah terhubung dan juga memiliki koneksi internet stabil.</li>
+                  <li data-aos="fade-left">Kemudian dalam mengerjakan test terkait dengan tingkat skala penilaian, dapat anda lihat dengan menekan tombol informasi pada bagian kanan atas.</li>
+                  <li data-aos="fade-left">Dalam test ini sendiri tidak memiliki jawaban benar maupun salah, sehingga isilah jawaban yakni dengan benar-benar sesuai kondisi anda saat ini.</li>
+                  <li data-aos="fade-left">Selanjutnya juga saat mengerjakan test bacalah dengan seksama setiap pertanyaan yang diberikan, agar hasil yang diberikan juga dapat sesuai dengan kondisi anda saat ini.</li>
                 </ol>
               </div>
             </div>
@@ -600,9 +606,9 @@ function TestPage() {
               </div>
               <div className='flex mt-[20px]'>
                 <ul className='list-none text-justify text-lg font-normal w-[585px]'>
-                  <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu metode yang digunakan untuk mengukur kondisi seseorang yaitu tingkat kecemasan yang sedang dialami.</li>
+                  <li data-aos="fade-left">Anxiety Test atau Test Kecemasan adalah salah satu cara untuk mengukur kondisi seseorang yaitu terkait dengan tingkat kecemasan yang sedang dialami.</li>
                   <br/>
-                  <li data-aos="fade-left">Metode HARS sendiri merupakan salah satu metode yang dapat digunakan untuk mengukur tingkat kecemasan seseorang. Skala HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran kecemasan.</li>
+                  <li data-aos="fade-left">Sedangkan metode HARS sendiri merupakan salah satu metode yang dapat digunakan dan diimplementasikan pada tes kecemasan tersebut. Skala penilaian dalam metode HARS sendiri juga telah dibuktikan memiliki validitas dan reliabilitas cukup tinggi untuk melakukan pengukuran terhadap tingkat kecemasan.</li>
                 </ul>
               </div>
               <div className='flex flex-row mt-[20px]' data-aos="fade-down">
