@@ -13,7 +13,7 @@ function TestimoniCard({ testi, index, testiIndex }) {
       <div className="p-2 relative">
         <img src="/images/up-quote.svg" className="w-5 absolute top-0 left-0" alt="up-quote icon" />
         <img src="/images/down-quote.svg" className="w-5 absolute bottom-0 right-0" alt="down-quote icon" />
-        <p>{testi.review}</p>
+        <p className='m-6'>{testi.review}</p>
       </div>
       <div className="flex gap-3 mt-5">
         <div className="w-1/5">

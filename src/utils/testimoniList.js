@@ -5,7 +5,7 @@ export const testimoniList = [
     profilePic: '/favicon.ico',
     job: 'Student at Dicoding Academy',
     rating: 5,
-    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    review: 'Website yang menarik membuat saya tau kecemasan yang sedang saya alami , terimakasih FamCare *emotLove',
   },
   {
     id: 2,
@@ -13,15 +13,15 @@ export const testimoniList = [
     profilePic: '/favicon.ico',
     job: 'Student at Dicoding Academy',
     rating: 5,
-    review: 'mantap',
+    review: 'mantap , fitur-fitur yang ada didalamnya sangat berguna untuk menambah wawasan tentang kesehatan mental',
   },
   {
     id: 3,
     name: 'Haikal',
     profilePic: '/favicon.ico',
     job: 'Student at Dicoding Academy',
-    rating: 5,
-    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    rating: 4,
+    review: 'sejauh ini sih sangat okeee tapi kedepannya harus dikembangkan lagi yaa websitenyaa , goodjob!!',
   },
   {
     id: 4,
@@ -29,6 +29,6 @@ export const testimoniList = [
     profilePic: '/favicon.ico',
     job: 'Student at Dicoding Academy',
     rating: 5,
-    review: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+    review: 'tips and trick yang ada sangat membantu untuk menangani masalah yang sedang saya alami',
   },
 ];
