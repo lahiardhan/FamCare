@@ -3,8 +3,9 @@ import CommentForm from '../../../components/Discussion/CommentForm'
 import CommentList from '../../../components/Discussion/CommentList'
 import DiscussionBody from '../../../components/Discussion/DiscussionBody'
 import DiscussionTitle from '../../../components/Discussion/DiscussionTitle'
+import 'react-toastify/dist/ReactToastify.css';
 
-const Discussion = () => {
+const Discussion = ({ token }) => {
   return (
     <>
     <div className="mt-20 px-10 lg:px-[120px] lg:py-[30px]">
@@ -15,7 +16,7 @@ const Discussion = () => {
             </a>
             <DiscussionBody />
             <CommentList />
-            <CommentForm/>
+            <CommentForm token={token}/>
           </div>
         </div> 
       </div>

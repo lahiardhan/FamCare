@@ -1,29 +1,38 @@
 import React from "react";
 import { useState } from "react";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import CommentsDataService from "../../services/comments.services";
 import moment from "moment/moment";
 
-function CommentForm() {
+function CommentForm({ token }) {
   const [comments, setComments] = useState("");
   const [date, setDate] = useState("");
   const [message, setMessage] = useState("");
 
   const dateToFormat = moment().format("M MMM YYYY");
-  const submitHandler = async (e) => {
-    e.preventDefault();
-    if (comments === "") {
-      setMessage({ error: true, msg: "Tuliskan uraian diskusi terlebih dahulu" });
-      return;
-    }
-    const newComments = {
-      comments,
-      date: dateToFormat,
-    };
-    console.log(newComments);
-    try {
-      await CommentsDataService.addComments(newComments);
-    } catch (err) {
-      setMessage({ error: true, msg: err.message });
+  
+    const submitHandler = async (e) => {
+        if (token === null) {
+            e.preventDefault();
+            toast.error('Mohon Login Terlebih dulu sebelum bergabung dalam diskusi');
+        } else {
+            e.preventDefault();
+            if (comments === "") {
+                setMessage({ error: true, msg: "Tuliskan uraian diskusi terlebih dahulu" })
+                return;
+            }
+            const newComments = {
+                comments
+            }
+            console.log(newComments);
+            try {
+                await CommentsDataService.addComments(newComments);
+            } catch (err) {
+                setMessage({error: true, msg: err.message})
+            }
+            setComments("");
+        }
     }
     setComments("");
   };
