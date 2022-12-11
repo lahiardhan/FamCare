@@ -9,14 +9,18 @@ import {
     doc,
     getDocs,
     query,
-    where
+    where,
+    serverTimestamp
 } from "firebase/firestore";
 
 const discussionCollectionRef = collection(db, "discussions");
 
 class DiscussionDataService {
     addDiscussions = (newDiscussion) => {
-        return addDoc(discussionCollectionRef, newDiscussion);
+        return addDoc(discussionCollectionRef,{
+            newDiscussion,
+            timestamp: serverTimestamp()
+        });
     }
 
     updateDiscussion = (id, updatedDiscussion) => {

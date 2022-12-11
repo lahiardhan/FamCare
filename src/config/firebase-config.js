@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDFg9SRILEiYSH4jTnodt07nH1-s3djeaA",
-  authDomain: "forum-discussion-famcare.firebaseapp.com",
-  projectId: "forum-discussion-famcare",
-  storageBucket: "forum-discussion-famcare.appspot.com",
-  messagingSenderId: "977377750523",
-  appId: "1:977377750523:web:b8838f49821d66ecef2f5e",
-  measurementId: "G-V3PG8LKFVQ"
+  apiKey: "AIzaSyDcFsfG5BpBAud2t2H47I-UbGmn07SaH4M",
+  authDomain: "famcare-620c7.firebaseapp.com",
+  projectId: "famcare-620c7",
+  storageBucket: "famcare-620c7.appspot.com",
+  messagingSenderId: "125245577256",
+  appId: "1:125245577256:web:2ca90d74906eaf2de93d1d",
+  measurementId: "G-CCLNSR8BH7"
 };
 
 // Initialize Firebase
