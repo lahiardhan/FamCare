@@ -1,9 +1,11 @@
 import {React, useState} from "react";
 import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import DiscussionDataService from "../../services/discussion.services";
 import showFormattedDate from "../../utils/formattedDate";
 
-const ModalDiscussion = () => {
+const ModalDiscussion = ({ token }) => {
     const [showModal, setShowModal] = useState(false);
     const [title, setTitle] = useState("");
     const [content, setContent] = useState("");
@@ -11,6 +13,14 @@ const ModalDiscussion = () => {
     const [message, setMessage] = useState({error: false, msg: ""});
 
     const navigate = useNavigate();
+
+    const onAddDiscussionClick = () => {
+      if (token === null) {
+        toast.error('Mohon Login Terlebih dulu sebelum menambah diskusi');
+      } else {
+        setShowModal(true);
+      }
+    }
 
     const submitHandler = async (e) => {
         e.preventDefault();
@@ -37,7 +47,7 @@ const ModalDiscussion = () => {
     <>
       <button
         type="button"
-        onClick={() => setShowModal(true)}
+        onClick={onAddDiscussionClick}
       >
         Buat diskusi baru +
       </button>

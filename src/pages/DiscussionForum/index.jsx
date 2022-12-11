@@ -11,7 +11,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { async } from "@firebase/util";
 import discussionServices from "../../services/discussion.services";
 
-function DiscussionForum() {
+function DiscussionForum({ token }) {
   const [discussions, setDiscussion] = useState([]);
   const [search, setSearch] = useState("");
   const navigate = useNavigate();
@@ -93,7 +93,7 @@ function DiscussionForum() {
         <div className="w-full mt-5 mb-3 lg:mt-0 lg:mb-0 lg:w-[30%]">
           <div className="flex flex-col justify-center items-center lg:flex-row">
             <button type="button" className="w-full p-3 text-md font-medium text-white bg-secondary-color rounded-lg lg:text-xl">
-              <ModalDiscussion />
+              <ModalDiscussion token={token} />
             </button>{" "}
           </div>{" "}
           {/* <div className="border-secondary-color border h-full mt-10 rounded-lg hidden lg:block">
