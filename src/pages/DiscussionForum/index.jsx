@@ -8,8 +8,6 @@ import { FiSearch } from "react-icons/fi";
 import ModalDiscussion from "../../components/Discussion/ModalDiscussion";
 import DiscussionDataService from "../../services/discussion.services";
 import { Link, useNavigate } from "react-router-dom";
-import { async } from "@firebase/util";
-import discussionServices from "../../services/discussion.services";
 
 function DiscussionForum() {
   const [discussions, setDiscussion] = useState([]);
@@ -27,11 +25,11 @@ function DiscussionForum() {
     } else {
       getDiscussions();
     }
-    console.log(search);
+    // console.log(search);
   }, [search]);
 
   const searchDiscussion = async (params) => {
-    const data = await discussionServices.searchByTitle(params);
+    const data = await DiscussionDataService.searchByTitle(params);
     data.forEach((doc) => setDiscussion([doc.data()]));
   };
 
@@ -45,8 +43,8 @@ function DiscussionForum() {
     );
   };
 
-  console.log("search", search);
-  console.log("discussions", discussions);
+  // console.log("search", search);
+  // console.log("discussions", discussions);
   return (
     <div className="mt-20 px-10 lg:px-[120px] lg:py-[30px]">
       <div className="flex w-full flex-col-reverse space-x-0 lg:space-x-6 lg:flex-row">
@@ -95,7 +93,7 @@ function DiscussionForum() {
             <button type="button" className="w-full p-3 text-md font-medium text-white bg-secondary-color rounded-lg lg:text-xl">
               <ModalDiscussion />
             </button>{" "}
-          </div>{" "}
+          </div>
           {/* <div className="border-secondary-color border h-full mt-10 rounded-lg hidden lg:block">
                   <div className="flex justify-center">
                     <h1 className="mt-5 text-2xl font-medium">Kata kunci</h1>
