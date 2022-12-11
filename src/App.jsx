@@ -6,6 +6,8 @@ import Loader from './components/atoms/Loader';
 import Navbar from './components/organisms/Navbar';
 import { getArticleList } from './services/news-api';
 import 'react-toastify/dist/ReactToastify.css';
+import Cookies from 'js-cookie';
+import jwtDecode from 'jwt-decode';
 
 const Page404 = Loadable({
   loader: () => import('./pages/404'),
@@ -104,10 +106,10 @@ const HasilTest = Loadable({
   loading: Loader,
 });
 
-
 function App() {
   const [articles, setArticles] = useState([]);
   const [message, setMessage] = useState('');
+  const [authToken, setAuthToken] = useState(null);
 
   useEffect(() => {
     const loader = document.getElementById('startingLoader');
@@ -121,6 +123,11 @@ function App() {
       setArticles(articles);
       setMessage(message);
     });
+
+    const token = Cookies.get('token');
+    if (token) {
+      setAuthToken(token);
+    }
   }, []);
 
   return (
@@ -132,8 +139,8 @@ function App() {
         <Routes>
           <Route path="/*" element={<Page404 />} />
           <Route path="/" element={<LandingPage />} />
-          <Route path="/forum" element={<DiscussionForum />}/>
-          <Route path='/forum/:id' element={<DiscussionContent/>}/>
+          <Route path="/forum" element={<DiscussionForum token={authToken} />}/>
+          <Route path='/forum/:id' element={<DiscussionContent token={authToken}/>}/>
           <Route path="test" element={<TestPage />} />
           <Route path="article" element={<Article articles={articles} message={message} />} />
           <Route path="about" element={<AboutUs />} />
