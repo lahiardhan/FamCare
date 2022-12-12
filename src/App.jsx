@@ -115,7 +115,7 @@ function App() {
     const loader = document.getElementById('startingLoader');
     window.onload = () => {
       if (loader) {
-        loader.remove();
+        loader.style.display = 'none';
       }
     };
 
