@@ -6,13 +6,13 @@
   "description": "Platform layanan dukungan kesehatan mental keluarga",
   "display": "standalone",
   "theme_color": "#28315E",
-  "background_color": "#28315E",
+  "background_color": "#f2f2f2",
   "icons": [
     {
       "src": "./icons/maskable_icon_x192.png",
       "type": "image/png",
       "sizes": "192x192",
-      "purpose": "any"
+      "purpose": "maskable"
     },
     {
       "src": "./icons/icon72.png",
