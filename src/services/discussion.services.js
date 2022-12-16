@@ -17,10 +17,7 @@ const discussionCollectionRef = collection(db, "discussions");
 
 class DiscussionDataService {
     addDiscussions = (newDiscussion) => {
-        return addDoc(discussionCollectionRef,{
-            newDiscussion,
-            timestamp: serverTimestamp()
-        });
+        return addDoc(discussionCollectionRef, newDiscussion);
     }
 
     updateDiscussion = (id, updatedDiscussion) => {
