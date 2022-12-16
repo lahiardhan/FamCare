@@ -9,8 +9,7 @@ import {
     doc,
     getDocs,
     query,
-    where,
-    serverTimestamp
+    where
 } from "firebase/firestore";
 
 const discussionCollectionRef = collection(db, "discussions");
