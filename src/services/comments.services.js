@@ -9,7 +9,7 @@ import {
     updateDoc,
     deleteDoc,
     doc,
-    getDocs
+    getDocs,
 } from "firebase/firestore";
 
 const commentCollectionRef = collection(db, "comments");
