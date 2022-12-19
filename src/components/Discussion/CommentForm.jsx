@@ -10,7 +10,7 @@ function CommentForm({ token }) {
   const [date, setDate] = useState("");
   const [message, setMessage] = useState("");
 
-  const dateToFormat = moment().format("M MMM YYYY");
+  // const dateToFormat = moment().format("M MMM YYYY");
   
   const submitHandler = async (e) => {
       if (token === null) {
